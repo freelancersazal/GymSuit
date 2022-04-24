@@ -45,14 +45,25 @@ img {
 	object-fit: cover;
 }
 
+input {
+	width: 100%;
+	padding: 20px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+}
 
+input::placeholder,
+textarea::placeholder{ 
+    color: #D6D6D7;
+    opacity: 1;
+}
 
+ button{
+	border: none;
+ }
 
-
-
-/* =================================
-   COMMON CSS START
-================================= */
+/* ========COMMON CSS START========= */
 .common_btn {
 	background: #9BB70D;
 	padding: 20px 40px;
@@ -72,8 +83,6 @@ img {
     background: #748b03;
     color: #fff;
 }
-
-.wsus__heading_area{}
 
 .wsus__heading_area h5 {
 	font-size: 24px;
@@ -101,22 +110,20 @@ img {
 	width: 70%;
 	margin-left: 15%;
 }
-/* =================================
-   COMMON CSS END
-================================= */
+/* ========COMMON CSS END========== */
 
 
 
-/* =================================
-   MENU START
-================================= */
+
+/* ==============================
+	HOME PAGE 1 START
+============================== */
+/* =========MENU START======= */
 .main_menu {
-	position: fixed;
-	top: 40px;
-	left: 0;
 	width: 100%;
 	height: 65px;
 	padding: 0;
+	z-index: 9999;
 }
 
 .main_menu .border_area{
@@ -133,13 +140,9 @@ img {
 	left: 1%;
 }
 
-.main_menu .navbar-brand{}
-
 .main_menu ul {
 	align-items: center;
 }
-
-.main_menu ul li{}
 
 .main_menu ul li a {
 	text-transform: capitalize;
@@ -170,10 +173,14 @@ img {
 }
 
 .main_menu ul li:last-child a {
-	background: #03030B;
+	background: #000;
 	padding: 15px 25px !important;
 	border-radius: 5px;
 	line-height: 15px;
+}
+
+.main_menu ul li .login {
+	margin-left: 70px;
 }
 
 .main_menu ul li:last-child a::after{
@@ -196,12 +203,13 @@ img {
 }
 
 .menu_fix {
-    position: fixed !important;
-    left: 0px;
-    top: 0;
-    z-index: 9999;
-    animation: menu_animate 1s ease-in-out;
-    -webkit-animation: menu_animate 1s ease-in-out;
+	position: fixed !important;
+	left: 0px;
+	top: 0 !important;
+	z-index: 9999;
+	animation: menu_animate 1s ease-in-out;
+	-webkit-animation: menu_animate 1s ease-in-out;
+	background: #000;
 }
 
 @keyframes menu_animate {
@@ -221,15 +229,25 @@ img {
         -o-transform: translateY(0%);
     }
 }
-/* =================================
-    MENU END
-================================= */
+
+.menu_fix ul li:last-child a {
+	background: #9BB70D;
+	color: #fff !important;
+}
 
 
+.home_1 .main_menu,
+.home_2 .main_menu  {
+	position: fixed;
+	top: 40px;
+	left: 0;
+}
 
-/* =================================
-    BANNER START
-================================= */
+
+/* =========MENU END======== */
+
+
+/* ========BANNER START========== */
 .wsus__banner {
 	background-position: right !important;
 	background-repeat: no-repeat !important;
@@ -272,8 +290,6 @@ img {
 	margin: 30px 0px 35px 0px;
 	font-size: 18px;
 }
-
-.banner_btn {}
 
 .banner_btn li a{
     margin-right: 40px;
@@ -326,8 +342,6 @@ img {
 	margin-top: 160px;
 }
 
-.wsus__banner_img img{}
-
 .scroll_btn {
 	font-size: 13px;
 	color: #fff;
@@ -368,25 +382,15 @@ img {
 		left: 50px;
 	}
 }
-/* =================================
-    BANNER END
-================================= */
+/* ========BANNER END========= */
 
 
-
-
-
-
-
-
-/* =================================
-   ABOUT START
-================================= */
-.wsus__about{}
-
+/* ======== ABOUT START========= */
 .wsus__about_img {
 	position: relative;
 	height: 550px;
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 .wsus__about_img a {
@@ -421,17 +425,6 @@ img {
 	background: #ffffff8f !important;
 	color: #9BB70D !important;
 }
-
-
-
-
-
-
-
-
-.wsus__about_text{}
-
-.wsus__about_text ul{}
 
 .wsus__about_text ul li {
 	display: flex;
@@ -469,6 +462,7 @@ img {
 
 .wsus__about .wsus__heading_area p {
 	margin: 25px 0px 30px 0px;
+	width: 100%;
 }
 
 .wsus__about_text ul li:hover .icon{
@@ -480,18 +474,10 @@ img {
 	transform: rotate(-45deg);
 	font-size: 35px;
 }
-/* =================================
-   ABOUT END
-================================= */
+/* =======ABOUT END======= */
 
 
-
-
-/* =================================
-   SERVICES START
-================================= */
-.wsus__services{}
-
+/* =========SERVICES START========= */
 .wsus__single_services {
 	border: 2px solid #9BB70D;
 	border-radius: 10px;
@@ -545,18 +531,10 @@ img {
 .wsus__single_services:hover p{
 	color: #fff;
 }
-
-/* =================================
-   SERVICES END
-================================= */
+/* =========SERVICES END====== */
 
 
-
-/* =================================
-   COUNTER START
-================================= */
-.wsus__counter{}
-
+/* =======COUNTER START========= */
 .wsus__single_counter {
 	width: 200px;
 	height: 200px;
@@ -569,7 +547,6 @@ img {
 	position: relative;
 	margin: 25px auto 0px auto;
 }
-
 
 .wsus__single_counter h4 {
 	font-size: 20px;
@@ -584,22 +561,10 @@ img {
 	color: #fff;
 	font-weight: 500;
 }
-/* =================================
-   COUNTER END
-================================= */
+/* ======COUNTER END========= */
 
 
-
-
-/* =================================
-   GALLERY START
-================================= */
-.wsus__gallery{}
-
-.wsus__gallery_item{
-
-}
-
+/* =======GALLERY START======== */
 .wsus__gallery_item .gallery_img {
 	margin-top: 25px;
 	border-radius: 10px;
@@ -688,29 +653,10 @@ img {
 	-ms-transform: scale(1);
 	-o-transform: scale(1);
 }
+/* =========GALLERY END====== */
 
 
-/* =================================
-   GALLERY END
-================================= */
-
-
-
-
-
-
-
-
-
-
-
-
-/* =================================
-   PRICING START
-================================= */
-.wsus__pricing{}
-
-
+/* ========PRICING START======== */
 .wsus__single_pricing{
 	border: 2px solid #9BB70D;
 	border-radius: 10px;
@@ -792,15 +738,10 @@ img {
 	background: #fff;
 	border-color: #fff;
 }
-/* =================================
-   PRICING END
-================================= */
+/* ======PRICING END========== */
 
 
-
-/* =================================
-   TESTIMONIAL START
-================================= */
+/* ========TESTIMONIAL START======= */
 .wsus__testimonial_item {
 	margin: 25px 12px 0px 12px;
 }
@@ -856,13 +797,21 @@ img {
 	color: #C9CACD;
 }
 
-.slick-dots {
+.wsus__information .slick-dots,
+.home_2 .wsus__services .slick-dots,
+.wsus__banner_slider_area .slick-dots, 
+.wsus__testimonial .slick-dots {
 	display: flex;
 	justify-content: center;
 	margin-top: 40px;
+	z-index: 99;
+	position: relative;
 }
 
-.slick-dots li button {
+.wsus__information .slick-dots li button,
+.home_2 .wsus__services .slick-dots li button,
+.wsus__banner_slider_area .slick-dots li button,
+.wsus__testimonial .slick-dots li button {
 	font-size: 0;
 	width: 30px;
 	height: 7px;
@@ -877,22 +826,16 @@ img {
 	-o-transition: all linear .3s ease;
 }
 
-.slick-dots .slick-active button{
+.wsus__information .slick-dots .slick-active button,
+.home_2 .wsus__services .slick-dots .slick-active button,
+.wsus__banner_slider_area .slick-dots .slick-active button,
+.wsus__testimonial .slick-dots .slick-active button{
 	background: #9BB70D;
 }
-/* =================================
-   TESTIMONIAL END
-================================= */
+/* ========TESTIMONIAL END====== */
 
 
-
-
-/* =================================
-   AGENT START
-================================= */
-.wsus__agents{}
-
-
+/* ========GENT START========= */
 .wsus__single_agents {
 	background: #222224;
 	padding: 15px;
@@ -936,10 +879,6 @@ img {
 	align-items: center;
 }
 
-.wsus__single_agents_link ul{}
-
-.wsus__single_agents_link ul li{}
-
 .wsus__single_agents_link ul li a {
 	color: #9BB70D;
 	width: 30px;
@@ -977,19 +916,10 @@ img {
 	color: #fff;
 	background: #9BB70D;
 }
-/* =================================
-   AGENT END
-================================= */
+/* ========AGENT END======== */
 
 
-
-
-
-
-
-/* =================================
-   INFORMATION START
-================================= */
+/* ========INFORMATION START====== */
 .wsus__information{
 	background-size: cover !important;
 	background-repeat: no-repeat !important;
@@ -1000,8 +930,6 @@ img {
 	background: rgba(0, 0, 0, 0.76);
 	padding: 110px 0px;
 }
-
-.wsus__info_text{}
 
 .wsus__info_text h5 {
 	color: #ECECEC;
@@ -1021,18 +949,10 @@ img {
 	margin-top: 20px;
 	margin-bottom: 22px;
 }
-
-.wsus__info_text a{}
-
-/* =================================
-   INFORMATION END
-================================= */
+/* =======NFORMATION END======== */
 
 
-
-/* =================================
-    BLOG START
-================================= */
+/* ========BLOG START========= */
 .wsus__single_blog {
 	background: #222224;
 	padding: 15px;
@@ -1105,21 +1025,11 @@ img {
 	color: #D6D6D7;
 	margin: 25px 0px 30px 0px;
 }
-/* =================================
-    BLOG END
-================================= */
+/* ========BLOG END========= */
 
 
 
-
-/* =================================
-   FAQ START
-================================= */
-.wsus__faq{}
-
-
-.wsus__faq_items{}
-
+/* ======= FAQ START======== */
 
 .wsus__faq .accordion-item {
 	border: 0;
@@ -1127,9 +1037,6 @@ img {
 	border-bottom: 1px solid #FFFFFF17;
 	border-radius: 0;
 }
-
-
-
 
 .wsus__faq .accordion-button {
 	background: none;
@@ -1161,12 +1068,9 @@ img {
 	color: #fff !important;
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 31px;
 }
-
-
-
 
 .wsus__faq .accordion-button:focus {
 	box-shadow: none;
@@ -1194,18 +1098,462 @@ img {
 	position: absolute;
 	content: "";
 	width: 2px;
-	height: 90%;
+	height: 95%;
 	background: #9BB70D;
 	top: 5%;
 	left: 0;
+}
+/* ========FAQ END========= */
+
+
+
+/* ========FOOTER START======= */
+footer{
+	background: #9BB70D;
+	position: relative;
+}
+
+.wsus__footer_content .footer_logo {
+	width: 170px;
+	margin: 0px 0px 5px 0px;
+}
+
+.wsus__footer_content p, .wsus__footer_content a {
+	color: #fff;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.wsus__footer_content p i, .wsus__footer_content a i {
+	width: 25px;
+}
+
+.wsus__footer_content h3 {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin-bottom: 18px;
+}
+
+.wsus__footer_content ul li a{
+	text-transform: capitalize;
+	font-size: 16px;
+}
+
+.wsus__footer_content span {
+	color: #fff;
+	text-transform: capitalize;
+	display: block;
+	margin-top: 38px;
+}
+
+.wsus__footer_content form input {
+	margin: 15px 0px 25px 0px;
+}
+
+.wsus__footer_content form button {
+	background: #fff;
+	color: #9BB70D;
+}
+
+footer::after {
+	position: absolute;
+	content: "";
+	background: url(../images/footer_shapes.png);
+	width: 160px;
+	height: 135px;
+	top: 10px;
+	right: 0;
+}
+
+footer::before {
+	position: absolute;
+	content: "";
+	background: url(../images/footer_shapes.png);
+	width: 160px;
+	height: 137px;
+	bottom: 10px;
+	left: 10px;
+}
+/* =================================
+    HOME PAGE 1 END
+================================= */
+
+
+
+/* =================================
+    HOME PAGE 2 START
+================================= */
+.home_2 .main_menu ul li:last-child a {
+	background: #9BB70D;
+	color: #fff;
+}
+
+.home_2 .wsus__banner {
+	height: auto;
+}
+
+.home_2 .wsus__banner_img {
+	height: 650px;
+	margin-top: 100px;
+}
+
+
+.wsus__information .slick-dots li button,
+.home_2 .wsus__services .slick-dots li button,
+.wsus__services .slick-dots li button,
+.wsus__banner_slider_area .slick-dots li button {
+	background: #9BB70D;
+}
+
+.wsus__information .slick-dots .slick-active button,
+.home_2 .wsus__services .slick-dots .slick-active button,
+.wsus__services .slick-dots .slick-active button,
+.wsus__banner_slider_area .slick-dots .slick-active button{
+	background: #fff;
+	border-color: #fff;
+}
+
+.wsus__banner_slider_area .slick-dots{
+	margin-top: 0px;
+}
+
+.home_2 .wsus__about_img {
+	height: 600px;
 }
 
 
 
 
+
+
+
+
+.wsus__process{}
+
+.wsus__single_process{
+	text-align: center;
+	margin-top: 25px;
+}
+
+.wsus__single_process span {
+	display: block;
+	width: 190px;
+	height: 190px;
+	text-align: center;
+	background: #9BB70D;
+	line-height: 190px;
+	font-size: 50px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	margin: 0 auto;
+	position: relative;
+}
+
+.wsus__single_process p {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.wsus__single_process span::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	border: 1px dashed #9BB70D;
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%);
+}
+
+.wsus__single_process.last span::after{
+	display: none;
+}
+
+.home_2 .wsus__single_services {
+	text-align: left;
+	padding: 50px 35px 57px 35px;
+	margin: 25px 12px 0px 12px;
+}
+
+.home_2 .wsus__services .slick-dots {
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+.wsus__video{}
+
+.wsus__video_area {
+	margin-top: 25px;
+	width: 100%;
+	height: 450px;
+	position: relative;
+}
+
+.wsus__video_area img{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.wsus__video_area::after {
+	position: absolute;
+	content: "";
+	width: 110%;
+	height: 100%;
+	border: 2px dashed #9BB70D;
+	top: 35px;
+	left: -5%;
+	border-radius: 10px;
+	z-index: -1;
+}
+
+.wsus__video_area a{}
+
+.wsus__video_area a span {
+	width: 60px;
+	height: 60px;
+	display: block;
+	color: #9BB70D;
+	background: #fff;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+
+
+.wsus__training{}
+
+.wsus__single_training {
+	height: 350px;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 25px;
+}
+
+.wsus__training_text {
+	position: absolute;
+	width: 100%;
+	padding: 15px;
+	bottom: 0;
+	left: 0;
+	background: #00000050;
+}
+
+.wsus__training_text h4 {
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.wsus__training_text p{}
+
+
+.wsus__info_text_2 p {
+	width: 60%;
+	margin-left: 20%;
+}
+
+.wsus__info_text .icon {
+	font-size: 50px;
+	color: #9BB70D;
+}
+
+.wsus__info_center{}
+
+.wsus__info_center img {
+	width: 100px;
+	height: 100px !important;
+	margin: auto;
+	border-radius: 5px;
+}
+
+.wsus__info_center h4 {
+	margin-top: 15px;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.wsus__info_center p {
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+.wsus__information .slick-dots{
+	margin-top: 0 !important;
+}
+
+
+.footer_2{
+	background: #222224;
+	position: static;
+}
+
+
+
+
+
+
+.footer_2{}
+
+.footer_2 form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer_2 form input {
+	background: #03030B30;
+	width: 75%;
+	margin: 0;
+	color: #ffff;
+}
+
+.footer_2 form button {
+	background: #9BB70D;
+	color: #fff;
+	padding: 18px 60px;
+}
+
+.footer_2 form input::placeholder{ 
+    color: #A2A8B1;
+}
+
+.footer_2 .unsubscribe {
+	color: #fff;
+	opacity: .8;
+	text-transform: capitalize;
+}
+
+.footer_2 .unsubscribe a {
+	text-decoration: underline;
+	margin: 0;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s ease;
+	-moz-transition: all linear .3s ease;
+	-ms-transition: all linear .3s ease;
+	-o-transition: all linear .3s ease;
+}
+
+.footer_2 .unsubscribe a:hover{
+	color: #9BB70D;
+}
+
+.footer_2::after,
+.footer_2::before{
+	display: none;
+}
+
+.footer_2 .footer_link {
+	padding: 55px 0px 60px 0px;
+}
+
+.footer_2 .footer_link li a {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: #D6D6D6;
+	border-radius: 3px;
+	margin: 0px 5px;
+	color: #222224;
+}
+
+.wsus__copyright {
+	border-top: 1px solid #6D6F73;
+	padding: 35px 0px;
+}
+
+.wsus__copyright p{
+	text-align: center;
+	color: #6D6F73;
+}
 /* =================================
-   FAQ END
+    HOME PAGE 2 END
 ================================= */
+
+
+
+/* =================================
+    BREADCRUMB START
+================================= */
+.wsus__breadcrumb{
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.wsus__breadcrumb_overlay {
+	background: rgba(3, 3, 11, 0.8);
+	overflow: hidden;
+	padding: 185px 0px 190px 0px;
+}
+
+.wsus__breadcrumb h1 {
+	text-transform: capitalize;
+	font-size: 50px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.wsus__breadcrumb ul li a {
+	text-transform: capitalize;
+	font-size: 18px;
+	color: #fff;
+	padding-left: 30px;
+	position: relative;
+}
+
+.wsus__breadcrumb ul li a::after {
+	position: absolute;
+	content: "";
+	background: #fff;
+	width: 10px;
+	height: 2px;
+	top: 50%;
+	left: 10px;
+}
+
+.wsus__breadcrumb ul li:first-child a{
+	padding-left: 0;
+}
+
+.wsus__breadcrumb ul li:first-child a::after{
+	display: none;
+}
+
+.wsus__breadcrumb ul li:last-child a{
+	color: #9BB70D;
+}
+
+.wsus__breadcrumb ul li:last-child a::after{
+	background: #9BB70D;
+}
+/* =================================
+    BREADCRUMB END
+================================= */
+
+
+
+
 
 
 
