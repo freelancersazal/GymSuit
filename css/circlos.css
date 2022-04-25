@@ -1,0 +1,58 @@
+.cdev {
+	position: relative;
+	height: 220px;
+	width: 220px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+ 
+.cdev div {
+	position: absolute;
+	height: 220px;
+	width: 220px;
+	border-radius: 50%;
+}
+
+.cdev div span {
+	position: absolute;
+	font-family: Arial;
+	font-size: 25px;
+	height: 200px;
+	width: 200px;
+	left: 10px;
+	top: 10px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #000;
+	color: #000;
+	line-height: 190px;
+}
+ 
+.cdev .background { background-color: #b3cef6; }
+ 
+.cdev .rotate {
+	clip: rect(0 110px 220px 0);
+}
+ 
+.cdev .left {
+  clip: rect(0 110px 220px 0);
+}
+ 
+.cdev .right {
+	clip: rect(0 110px 220px 0);
+	transform: rotate(180deg);
+	opacity: 0;
+	background-color: #4b86db;
+}
+ 
+@keyframes
+toggle {  0% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}  

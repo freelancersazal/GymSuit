@@ -123,5 +123,10 @@ $(function () {
 
 
     
+    $(document).ready(function () {
+        $(".cdev").circlos();
+     });
+
+    
 
 });
