@@ -121,12 +121,17 @@ $(function () {
         arrows: false,
     }); 
 
-
     
     $(document).ready(function () {
         $(".cdev").circlos();
-     });
+    });
 
+
+    //*==========STICKY SIDEBAR========= 
+    $("#sticky_sidebar").stickit({
+        top:65,
+    })
+        
     
 
 });
