@@ -15,15 +15,15 @@ $(function () {
             }
         });
     }
-            
+
     //Venobos 
-    $('.venobox').venobox(); 
-    
-    
+    $('.venobox').venobox();
+
+
     //=========main.js=========   
     $('.counter').countUp();
-    
-    
+
+
     //*=======TESTIMONIAL SLIDER====== 
     $('.test_slider').slick({
         slidesToShow: 2,
@@ -57,11 +57,11 @@ $(function () {
                 settings: {
                     slidesToShow: 1,
                 }
-            }   
+            }
         ]
-    }); 
+    });
 
-    
+
     //*=======BANNER SLIDER====== 
     $('.banner_slider').slick({
         slidesToShow: 1,
@@ -70,9 +70,9 @@ $(function () {
         autoplaySpeed: 4000,
         dots: true,
         arrows: false,
-    }); 
+    });
 
-    
+
     //*=======SERVICE SLIDER====== 
     $('.service_slider').slick({
         slidesToShow: 4,
@@ -106,9 +106,9 @@ $(function () {
                 settings: {
                     slidesToShow: 1,
                 }
-            }   
+            }
         ]
-    }); 
+    });
 
 
     //*=======BANNER SLIDER====== 
@@ -119,9 +119,9 @@ $(function () {
         autoplaySpeed: 4000,
         dots: true,
         arrows: false,
-    }); 
+    });
 
-    
+
     $(document).ready(function () {
         $(".cdev").circlos();
     });
@@ -129,9 +129,17 @@ $(function () {
 
     //*==========STICKY SIDEBAR========= 
     $("#sticky_sidebar").stickit({
-        top:65,
+        top: 65,
     })
-        
-    
+
+    //=======SELECT2====== 
+    $(document).ready(function () {
+        $('.select_2').select2();
+    });
+
+
+
+
+
 
 });
