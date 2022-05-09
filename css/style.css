@@ -2730,6 +2730,167 @@ footer::before {
 
 
 
+/* =================================
+    CART VIEW START
+================================= */
+.wsus__cart_view {}
+
+.wsus__cart_item {}
+
+.wsus__cart_item table {
+	margin: 0;
+}
+
+.wsus__cart_item table tr {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wsus__cart_item table tr th {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 700;
+	padding: 0;
+	border: none;
+	padding-bottom: 20px;
+}
+
+.wsus__cart_item table tr td {
+	border: none;
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	padding: 0;
+	justify-content: center;
+}
+
+.wsus__cart_item .categories {
+	width: 31%;
+	justify-content: start;
+}
+
+.wsus__cart_item .price,
+.wsus__cart_item .quentity,
+.wsus__cart_item .total {
+	width: 23%;
+	text-align: center;
+}
+
+.wsus__cart_item .categories .img {
+	width: 80px;
+	height: 80px;
+	position: relative;
+}
+
+.wsus__cart_item .categories .img a {
+	width: 22px;
+	height: 22px;
+	background: #9BB70D;
+	color: #000;
+	text-align: center;
+	line-height: 23px;
+	font-size: 12px;
+	border-radius: 50%;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}
+
+.wsus__cart_item .categories .img a:hover {
+	color: #fff;
+}
+
+.wsus__cart_item .text {
+	margin-left: 15px;
+}
+
+.wsus__cart_item h4 {
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+
+.wsus__cart_item p {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.wsus__cart_item h5 {
+	color: #fff;
+	font-size: 18px;
+	margin: 0;
+}
+
+.cart_sedebar {}
+
+.cart_sedebar h4 {
+	text-transform: capitalize;
+	font-size: 22px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.cart_sedebar ul {}
+
+.cart_sedebar ul li {
+	font-size: 18px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+	padding-bottom: 5px;
+	margin-bottom: 25px;
+}
+
+.cart_sedebar ul li span {
+	font-size: 18px;
+}
+
+.cart_sedebar .form-check {
+	margin-bottom: 25px;
+}
+
+.cart_sedebar .form-check input {
+	padding: 0;
+}
+
+.cart_sedebar .form-check-input:checked {
+	background-color: #9BB70D;
+	border-color: #9BB70D;
+}
+
+.cart_sedebar .form-check-input:focus {
+	border-color: #9BB70D;
+	box-shadow: none;
+}
+
+.cart_sedebar .form-check label {
+	font-size: 14px;
+}
+
+.cart_sedebar a {
+	width: 100%;
+	text-align: center;
+	padding: 15px 0;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+
+
+
+
+/* =================================
+    CART VIEW END
+================================= */
+
+
+
+
+
+
 
 
 
