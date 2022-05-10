@@ -132,13 +132,14 @@ $(function () {
         top: 65,
     })
 
+
     //=======SELECT2====== 
     $(document).ready(function () {
         $('.select_2').select2();
     });
 
-
-
+    //=======COLORTAB====== 
+    $("#colorful").colorfulTab();
 
 
 

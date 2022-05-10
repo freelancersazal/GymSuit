@@ -2429,7 +2429,8 @@ footer::before {
 	margin-bottom: 20px;
 }
 
-.wsus__checkout_form .form-check input {
+.wsus__checkout_form .form-check input,
+.wsus__login_form .form-check input {
 	padding: 0;
 	border-radius: 0;
 	-webkit-border-radius: 0;
@@ -2438,17 +2439,20 @@ footer::before {
 	-o-border-radius: 0;
 }
 
-.wsus__checkout_form .form-check-input:checked {
+.wsus__checkout_form .form-check-input:checked,
+.wsus__login_form .form-check-input:checked {
 	background-color: #9BB70D;
 	border-color: #9BB70D;
 }
 
-.wsus__checkout_form .form-check-input:focus {
+.wsus__checkout_form .form-check-input:focus,
+.wsus__login_form .form-check-input:focus {
 	border-color: #9BB70D;
 	box-shadow: none;
 }
 
-.wsus__checkout_form .form-check label {
+.wsus__checkout_form .form-check label,
+.wsus__login_form .form-check label {
 	font-size: 14px;
 }
 
@@ -2878,14 +2882,217 @@ footer::before {
 	font-weight: 400;
 }
 
+/* =================================
+    CART VIEW END
+================================= */
 
 
 
 
 /* =================================
-    CART VIEW END
+    SCHEDULE START
+================================= */
+.wsus__schedule table {
+	margin: 0;
+	border-top: 1px solid #4F4C4C;
+}
+
+.wsus__schedule table tr {
+	border-bottom: 1px solid #4F4C4C;
+}
+
+.wsus__schedule table tr th {
+	text-transform: capitalize;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 400;
+	border-right: 1px solid #4F4C4C;
+	padding: 10px;
+}
+
+.wsus__schedule table tr td {
+	color: #fff;
+	font-size: 16px;
+	border-right: 1px solid #4F4C4C;
+	padding: 20px 5px;
+	vertical-align: middle;
+}
+
+.wsus__schedule table tr th:last-child,
+.wsus__schedule table tr td:last-child {
+	border: none;
+}
+
+.wsus__schedule table tr td h4 {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin: 0;
+}
+
+.wsus__schedule table tr td p {
+	font-size: 16px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.wsus__schedule table .red h4,
+.wsus__schedule table .red p {
+	color: #E00C36;
+}
+
+/* =================================
+    SCHEDULE END
 ================================= */
 
+
+
+/* =================================
+    SIGNIN START
+================================= */
+.wsus__signin {}
+
+.wsus__signin ul {
+	border-bottom: 1px solid #5C5D5F;
+}
+
+.wsus__signin ul li {
+	width: 50%;
+}
+
+.wsus__signin ul li button {
+	width: 100%;
+	background: none !important;
+	color: #F2F2F2;
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 0 !important;
+	padding: 20px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+	color: #9BB70D;
+}
+
+.wsus__login_form {
+	background: #1D2027;
+	border-radius: 5px;
+	border: 1px solid #5C5D5F;
+}
+
+.wsus__login_form form {
+	padding: 30px;
+}
+
+.wsus__login_form form label {
+	font-size: 14px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: capitalize;
+}
+
+.wsus__login_form form label a {
+	color: #E00C36;
+}
+
+.wsus__login_form form input {
+	background: none;
+	border: 1px solid #5C5D5F;
+	border-radius: 0;
+	padding: 13px 20px;
+	color: #fff;
+}
+
+.wsus__login_form .wsus__single_input {
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.wsus__login_form .wsus__single_input span {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.wsus__login_form form .common_btn {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	border-radius: 0;
+	padding: 13px;
+}
+
+.wsus__login_form form .common_btn i {
+	margin-left: 5px;
+}
+
+.wsus__login_form form .or {
+	text-align: center;
+	position: relative;
+	margin-top: 20px;
+}
+
+.wsus__login_form form .or::after,
+.wsus__login_form form .or::before {
+	position: absolute;
+	content: "";
+	background: #5C5D5F;
+	width: 45%;
+	height: 1px;
+	top: 13px;
+	left: 0;
+}
+
+.wsus__login_form form .or::before {
+	top: 13px;
+	left: auto;
+	right: 0;
+}
+
+.wsus__login_form form ul li {
+	width: 100%;
+	border: 1px solid #5C5D5F;
+	margin-top: 25px;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wsus__login_form form ul li span {
+	font-size: 20px;
+}
+
+.wsus__login_form form ul li a {
+	color: #fff;
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+}
+
+.wsus__login_form .form-check {
+	margin-bottom: 20px;
+}
+
+.wsus__login_form .form-check label {
+	display: block;
+	margin: 0;
+	padding-top: 2px;
+}
+
+
+/* =================================
+    SIGNIN END
+================================= */
 
 
 
