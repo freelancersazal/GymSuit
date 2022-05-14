@@ -24,7 +24,7 @@ $(function () {
     $('.counter').countUp();
 
 
-    //*=======TESTIMONIAL SLIDER====== 
+    //======TESTIMONIAL SLIDER====== 
     $('.test_slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -62,7 +62,7 @@ $(function () {
     });
 
 
-    //*=======BANNER SLIDER====== 
+    //=====BANNER SLIDER====== 
     $('.banner_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -73,7 +73,7 @@ $(function () {
     });
 
 
-    //*=======SERVICE SLIDER====== 
+    //=====SERVICE SLIDER====== 
     $('.service_slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -111,7 +111,7 @@ $(function () {
     });
 
 
-    //*=======BANNER SLIDER====== 
+    //======BANNER SLIDER====== 
     $('.info_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -127,7 +127,7 @@ $(function () {
     });
 
 
-    //*==========STICKY SIDEBAR========= 
+    //=======STICKY SIDEBAR====== 
     $("#sticky_sidebar").stickit({
         top: 65,
     })
@@ -138,9 +138,17 @@ $(function () {
         $('.select_2').select2();
     });
 
+
     //=======COLORTAB====== 
     $("#colorful").colorfulTab();
 
+
+    //=======EX ZOOM====== 
+    if ($("#exzoom").length > 0) {
+        $("#exzoom").exzoom({
+            autoPlay: true,
+        });
+    }
 
 
 });
