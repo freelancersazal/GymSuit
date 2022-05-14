@@ -309,10 +309,18 @@ button {
 	display: block;
 	background: none !important;
 	border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-ms-border-radius: 0 !important;
+	-o-border-radius: 0 !important;
 }
 
 .main_menu .dropdown li:last-child a {
 	padding: 0 !important;
+}
+
+.main_menu .dropdown li:last-child a:hover {
+	color: #9BB70D;
 }
 
 .main_menu .dropdown li a::after {
@@ -497,18 +505,27 @@ button {
 	width: 60px;
 	height: 60px;
 	display: block;
-	background: #9BB70DB0;
+	background: #9bb70da3;
 	color: #fff;
 	text-align: center;
 	line-height: 60px;
 	border-radius: 50%;
 	position: relative;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s ease;
+	-moz-transition: all linear .3s ease;
+	-ms-transition: all linear .3s ease;
+	-o-transition: all linear .3s ease;
 }
 
-.about_play_2 span {
+.wsus__about_img a span:hover {
+	background: #9bb70d;
+}
+
+/* .about_play_2 span {
 	background: #ffffff8f !important;
 	color: #9BB70D !important;
-}
+} */
 
 .wsus__about_text ul li {
 	display: flex;
@@ -1032,12 +1049,12 @@ button {
 	display: inline-block;
 }
 
-.wsus__pricing_header h2 span {
+.wsus__pricing_header h2 sup {
 	position: absolute;
 	font-size: 20px;
 	font-weight: 900;
-	top: 13px;
-	left: -15px;
+	top: 23px;
+	left: -20px;
 }
 
 .wsus__pricing_body {
@@ -1292,9 +1309,8 @@ button {
 
 .wsus__info_text p {
 	width: 70%;
-	margin-left: 15%;
-	margin-top: 15px;
-	margin-bottom: 22px;
+	margin: 15px 0 22px 15%;
+	text-align: center;
 }
 
 /* =======NFORMATION END======== */
@@ -1492,6 +1508,15 @@ footer {
 .wsus__footer_content ul li a {
 	text-transform: capitalize;
 	font-size: 16px;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s ease;
+	-moz-transition: all linear .3s ease;
+	-ms-transition: all linear .3s ease;
+	-o-transition: all linear .3s ease;
+}
+
+.wsus__footer_content ul li a:hover {
+	color: #9BB70D;
 }
 
 .wsus__footer_content span {
@@ -1582,10 +1607,10 @@ footer::before {
 	height: 550px;
 }
 
-.home_2 .wsus__about_img img {
+/* .home_2 .wsus__about_img img {
 	width: 100% !important;
 	height: 100% !important;
-}
+} */
 
 .wsus__single_process {
 	text-align: center;
@@ -1784,6 +1809,10 @@ footer::before {
 	border-radius: 3px;
 	margin: 0px 5px;
 	color: #222224;
+}
+
+.footer_2 .footer_link li a i {
+	width: auto;
 }
 
 .wsus__copyright {
