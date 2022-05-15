@@ -125,9 +125,14 @@ button {
 /* =========MENU START======= */
 .main_menu {
 	width: 100%;
-	height: 65px;
+	height: 85px;
 	padding: 0;
+	position: static;
+	top: 0;
+	left: 0;
+	background: #000;
 	z-index: 9999;
+	padding-bottom: 15px;
 }
 
 .main_menu .border_area {
@@ -223,6 +228,8 @@ button {
 	left: 0px;
 	top: 0 !important;
 	z-index: 9999;
+	padding-bottom: 0;
+	height: 65px;
 	animation: menu_animate 1s ease-in-out;
 	-webkit-animation: menu_animate 1s ease-in-out;
 	background: #000;
@@ -248,9 +255,14 @@ button {
 
 .home_1 .main_menu,
 .home_2 .main_menu {
-	position: fixed;
+	position: absolute;
+	background: transparent;
 	top: 40px;
-	left: 0;
+}
+
+.home_1 .menu_fix,
+.home_2 .menu_fix {
+	background: #000;
 }
 
 
@@ -276,12 +288,18 @@ button {
 	background: #03030B;
 }
 
+.home_1 .menu_fix {}
+
 .home_1 .main_menu .dropdown {
 	padding: 15px 0px;
 }
 
 .home_1 .menu_fix ul li:last-child a {
 	background: #9BB70D;
+}
+
+.home_1 .menu_fix ul li:last-child a:hover {
+	background: #748b03;
 }
 
 .main_menu .dropdown {
@@ -335,6 +353,10 @@ button {
 	-moz-transform: scale(1);
 	-ms-transform: scale(1);
 	-o-transform: scale(1);
+}
+
+.home_1 .dropdown li:last-child a {
+	padding: 10px 0px 5px 20px !important;
 }
 
 /* =========MENU END======== */
@@ -630,7 +652,8 @@ button {
 	-o-transition: all linear .3s ease;
 }
 
-.wsus__single_services h4 {
+.wsus__single_services a {
+	display: block;
 	font-size: 24px;
 	color: #fff;
 	font-weight: 700;
@@ -640,6 +663,10 @@ button {
 	-moz-transition: all linear .3s ease;
 	-ms-transition: all linear .3s ease;
 	-o-transition: all linear .3s ease;
+}
+
+.wsus__single_services a:hover {
+	color: #000;
 }
 
 .wsus__single_services p {
@@ -666,12 +693,6 @@ button {
 
 
 /* =========SERVICES DETAILS START====== */
-.wsus__services_details {}
-
-.wsus__service_det_sidebar {}
-
-.wsus__service_det_sidebar {}
-
 .wsus__service_search {
 	background: #9BB70D;
 	position: relative;
@@ -713,10 +734,6 @@ button {
 	background: #1D2027;
 	margin-top: 25px;
 }
-
-.wsus__service_det_menu ul {}
-
-.wsus__service_det_menu ul li {}
 
 .wsus__service_det_menu ul li a {
 	width: 100%;
@@ -770,10 +787,6 @@ button {
 	color: #fff;
 	font-weight: 600;
 }
-
-.wsus__service_det_area {}
-
-.wsus__service_det_text {}
 
 .wsus__service_det_text h4 {
 	font-size: 25px;
@@ -1519,6 +1532,10 @@ footer {
 	color: #9BB70D;
 }
 
+.home_1 .wsus__footer_content ul li a:hover {
+	color: #000;
+}
+
 .wsus__footer_content span {
 	color: #fff;
 	text-transform: capitalize;
@@ -1564,16 +1581,6 @@ footer::before {
 /* =================================
     HOME PAGE 2 START
 ================================= */
-/* .home_2 .main_menu ul li:last-child a {
-	background: #9BB70D;
-	color: #fff;
-} */
-
-/* .home_2 .main_menu ul li:last-child a:hover {
-	background: #748b03;
-	color: #fff;
-} */
-
 .home_2 .wsus__banner {
 	height: auto;
 }
@@ -1606,11 +1613,6 @@ footer::before {
 .home_2 .wsus__about_img {
 	height: 550px;
 }
-
-/* .home_2 .wsus__about_img img {
-	width: 100% !important;
-	height: 100% !important;
-} */
 
 .wsus__single_process {
 	text-align: center;
@@ -1907,6 +1909,11 @@ footer::before {
 
 .wsus__pagination .page-item {
 	border: none;
+	padding: 0;
+}
+
+.wsus__pagination .page-item::after {
+	display: none;
 }
 
 .wsus__pagination .page-link {
@@ -1945,12 +1952,9 @@ footer::before {
 ================================= */
 
 
-
 /* =================================
     BLOG LIST START
 ================================= */
-.wsus__blog_list {}
-
 .wsus__blog_list_item {
 	margin-bottom: 25px;
 }
@@ -2036,10 +2040,6 @@ footer::before {
 	display: none;
 }
 
-.wsus__blog_list_text p {}
-
-.wsus__blog_list_text .button_area {}
-
 .wsus__blog_list_text .button_area li:first-child a {
 	text-transform: uppercase;
 	color: #9BB70D;
@@ -2074,11 +2074,6 @@ footer::before {
 .wsus__blog_list_text .button_area li:last-child a:hover {
 	background: #000;
 }
-
-
-.wsus__sidebar {}
-
-.wsus__blog_serch {}
 
 .sidebar_item {
 	padding: 30px;
@@ -2147,11 +2142,6 @@ footer::before {
 	border-color: #9BB70D;
 }
 
-
-
-
-.wss__sedebar_blog_item {}
-
 .wss__sedebar_blog_item li {
 	display: flex;
 	justify-content: space-between;
@@ -2172,8 +2162,6 @@ footer::before {
 	height: 100px !important;
 	margin-right: 20px;
 }
-
-.wss__sedebar_blog_item .text {}
 
 .wss__sedebar_blog_item .text a {
 	font-size: 15px;
@@ -2239,7 +2227,7 @@ footer::before {
 	color: #fff;
 	font-size: 14px;
 	border-radius: 3px;
-	margin-right: 10px;
+	margin-right: 8px;
 	margin-bottom: 10px;
 	transition: all linear .3s;
 	-webkit-transition: all linear .3s ease;
@@ -2267,10 +2255,6 @@ footer::before {
 .wsus__blog_tags ul li a:hover {
 	background: #9BB70D;
 }
-
-.wsus__sidebar_message {}
-
-.wsus__sidebar_message form {}
 
 .wsus__sidebar_message .wsus__single_input {
 	position: relative;
@@ -2318,10 +2302,41 @@ footer::before {
 .wsus__blog_det_img,
 .wsus__service_det_img {
 	height: 520px;
+	position: relative;
+}
+
+.wsus__blog_det_img .rating {
+	color: #FDCC0D;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 5px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	background: #000000ad;
+	padding: 7px 20px;
+}
+
+.wsus__blog_det_img .rating span {
+	background: #9BB70D;
+	padding: 2px 7px;
+	border-radius: 2px;
+	font-weight: 700;
+	font-size: 13px;
+	margin-left: 5px;
+	letter-spacing: 1px;
 }
 
 .wsus__blog_det_text .top_icon {
 	margin: 22px 0px 10px 0px;
+}
+
+.wsus__courses_details .top_icon {
+	background: #1D2027;
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-top: 0;
 }
 
 .wsus__blog_det_text .top_icon li {
@@ -2329,6 +2344,12 @@ footer::before {
 	font-size: 16px;
 	color: #C6C7C9;
 	margin-right: 25px;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.wsus__blog_det_text .top_icon li::after {
+	display: none;
 }
 
 .wsus__blog_det_text .top_icon li i {
@@ -2378,6 +2399,27 @@ footer::before {
 	padding-bottom: 25px;
 }
 
+.wsus__blog_det_text ul {
+	margin-bottom: 25px;
+}
+
+.wsus__blog_det_text ul li {
+	margin-bottom: 10px;
+	position: relative;
+	padding-left: 35px;
+}
+
+.wsus__blog_det_text ul li::after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	position: absolute;
+	content: "\f00c";
+	top: 2px;
+	left: 0;
+	color: #9BB70D;
+	font-size: 14px;
+}
+
 .wsus__blog_det_share {
 	border: 1px solid #E0E0E0;
 	padding: 25px;
@@ -2397,6 +2439,12 @@ footer::before {
 	text-transform: capitalize;
 	margin-left: 10px;
 	font-size: 15px;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.wsus__blog_det_share_tag ul li::after {
+	display: none;
 }
 
 .wsus__blog_det_share_icon ul li a {
@@ -2411,6 +2459,15 @@ footer::before {
 
 .wsus__blog_det_share_icon ul li a:hover {
 	color: #9BB70D;
+}
+
+.wsus__blog_det_share_icon ul li {
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.wsus__blog_det_share_icon ul li::after {
+	display: none;
 }
 
 .wsus__blog_comment_area,
@@ -2521,16 +2578,9 @@ footer::before {
 ================================= */
 
 
-
-
-
 /* =================================
     CHECKOUT START
 ================================= */
-.wsus__checkout {}
-
-.wsus__checkout_form {}
-
 .wsus__checkout_form h2 {
 	text-transform: capitalize;
 	font-size: 20px;
@@ -2559,6 +2609,10 @@ footer::before {
 	-moz-border-radius: 0;
 	-ms-border-radius: 0;
 	-o-border-radius: 0;
+}
+
+.wsus__login_form .form-check input {
+	margin-top: 2px;
 }
 
 .wsus__checkout_form .form-check-input:checked,
@@ -2620,7 +2674,7 @@ footer::before {
 .select2-container--default .select2-selection--single .select2-selection__rendered {
 	color: #fff;
 	text-transform: capitalize;
-	line-height: 50px;
+	line-height: 55px;
 	padding-left: 18px;
 }
 
@@ -2718,19 +2772,9 @@ footer::before {
 
 
 
-
-
-
-
-
-
-
-
 /* =================================
     404 START
 ================================= */
-.wsus__404 {}
-
 .wsus__404_text {
 	height: 550px;
 	padding-top: 103px;
@@ -2859,10 +2903,6 @@ footer::before {
 /* =================================
     CART VIEW START
 ================================= */
-.wsus__cart_view {}
-
-.wsus__cart_item {}
-
 .wsus__cart_item table {
 	margin: 0;
 }
@@ -2948,8 +2988,6 @@ footer::before {
 	margin: 0;
 }
 
-.cart_sedebar {}
-
 .cart_sedebar h4 {
 	text-transform: capitalize;
 	font-size: 22px;
@@ -2957,8 +2995,6 @@ footer::before {
 	text-align: center;
 	margin-bottom: 35px;
 }
-
-.cart_sedebar ul {}
 
 .cart_sedebar ul li {
 	font-size: 18px;
@@ -3007,8 +3043,6 @@ footer::before {
 /* =================================
     CART VIEW END
 ================================= */
-
-
 
 
 /* =================================
@@ -3206,7 +3240,6 @@ footer::before {
 .wsus__login_form .form-check label {
 	display: block;
 	margin: 0;
-	padding-top: 2px;
 }
 
 /* =================================
@@ -3328,7 +3361,7 @@ footer::before {
 	text-align: center;
 	color: #fff;
 	display: -webkit-box;
-	-webkit-line-clamp: 3;
+	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	font-size: 18px;
@@ -3444,8 +3477,6 @@ footer::before {
 /* =================================
     PRODUCT DETAILS START
 ================================= */
-.wsus__pro_det_area {}
-
 .wsus__pro_det_area h3 {
 	text-transform: capitalize;
 	font-size: 35px;
@@ -3503,15 +3534,9 @@ footer::before {
 	text-transform: capitalize;
 }
 
-.quentity_area form {}
-
-.quentity_area form input {}
-
 .quentity_area ul {
 	align-items: center;
 }
-
-.quentity_area ul li {}
 
 .quentity_area ul li a,
 .share_area ul li a {
@@ -3568,12 +3593,6 @@ footer::before {
 	margin-right: 15px;
 }
 
-
-
-
-
-.wsus__pro_description {}
-
 .wsus__pro_description ul {
 	border: 1px solid #5E5B5B;
 	margin-bottom: 30px;
@@ -3612,7 +3631,7 @@ footer::before {
 .wsus__single_review {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .wsus__single_review img {
@@ -3635,8 +3654,6 @@ footer::before {
 	text-transform: capitalize;
 	color: #dddd;
 }
-
-.wsus__review_text span i {}
 
 .wsus__review_text p {
 	margin-bottom: 15px;
@@ -3670,10 +3687,141 @@ footer::before {
 	color: #FDCC0D;
 }
 
+.wsus__related_product h3 {
+	font-size: 30px;
+	text-transform: capitalize;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
 /* =================================
     PRODUCT DETAILS END
 ================================= */
 
+
+
+/* =================================
+    COURSES START
+================================= */
+.wsus_courses {
+	background: #1D2027;
+	margin-bottom: 25px;
+}
+
+.wsus_courses_img {
+	position: relative;
+	height: 250px;
+}
+
+.wsus_courses_img ul {
+	display: flex;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.wsus_courses_img ul li a {
+	text-transform: capitalize;
+	color: #fff;
+	padding: 5px 20px;
+	border-radius: 3px;
+	margin-right: 10px;
+	font-size: 14px;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s ease;
+	-moz-transition: all linear .3s ease;
+	-ms-transition: all linear .3s ease;
+	-o-transition: all linear .3s ease;
+}
+
+.wsus_courses_img ul li a:hover {
+	color: #000;
+}
+
+.wsus_courses_text {
+	padding: 20px;
+}
+
+.wsus_courses_text .rating {
+	color: #FDCC0D;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 5px;
+	margin-bottom: 18px;
+}
+
+.wsus_courses_text .rating span {
+	background: #9BB70D;
+	padding: 2px 7px;
+	border-radius: 2px;
+	font-weight: 700;
+	font-size: 13px;
+	margin-left: 5px;
+	letter-spacing: 1px;
+}
+
+.wsus_courses_text .title {
+	text-transform: capitalize;
+	color: #fff;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	font-size: 18px;
+	font-weight: 700;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s ease;
+	-moz-transition: all linear .3s ease;
+	-ms-transition: all linear .3s ease;
+	-o-transition: all linear .3s ease;
+}
+
+.wsus_courses_text .title:hover {
+	color: #9BB70D;
+}
+
+.wsus_courses_text .description {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	margin: 15px 0px 23px 0px;
+}
+
+.wsus_courses_text ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wsus_courses_text ul li span {
+	color: #fff;
+	font-weight: 700;
+	border: 1px solid #5E5B5B;
+	padding: 5px 15px;
+	border-radius: 3px;
+	background: #e6e6e642;
+}
+
+.wsus_courses_text ul li a.common_btn {
+	font-weight: 400;
+	font-size: 16px;
+	padding: 5px 15px;
+	border-radius: 3px;
+}
+
+.wsus__course_review h3 {
+	font-size: 30px;
+	text-transform: capitalize;
+	font-weight: 700;
+	margin-bottom: 30px;
+	margin-top: 35px;
+}
+
+/* =================================
+    COURSES END
+================================= */
 
 
 

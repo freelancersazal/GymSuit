@@ -376,3 +376,143 @@
 .product_color .form-check input {
     float: right;
 }
+
+.wsus__schedule table tr th,
+.wsus__schedule table tr td {
+    border-right: 0;
+    border-left: 1px solid #4F4C4C;
+}
+
+.wsus__service_search button {
+    right: auto;
+    left: 0;
+    text-align: center;
+    border-left: 0;
+    border-right: 1px solid #fff;
+}
+
+.wsus__service_det_menu ul li a::after {
+    right: auto;
+    left: 15px;
+    transform: translateY(-50%) rotateY(180deg);
+}
+
+.wsus__service_det_call .call_icon {
+    margin-right: 0;
+    margin-left: 15px;
+    transform: rotateY(180deg);
+}
+
+.wsus__next_prev_service ul li {
+    border-right: 0;
+    border-left: 1px solid #fff;
+}
+
+.wsus__service_det_text ul li {
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.wsus__service_det_text ul li::after {
+    left: auto;
+    right: 0;
+    transform: translateY(-50%) rotateY(180deg);
+}
+
+.wsus__prev_service::after,
+.wsus__next_service::after {
+    left: auto;
+    right: 0;
+    transform: rotateY(180deg);
+}
+
+.wsus__next_service {
+    padding-right: 0;
+    padding-left: 50px;
+}
+
+.wsus__next_service::after {
+    right: auto !important;
+    left: 20px !important;
+}
+
+.wsus__next_service span,
+.wsus__next_service p {
+    text-align: left;
+}
+
+.wsus__signin ul li button {
+    text-align: center;
+}
+
+.wsus__login_form form .common_btn i {
+    margin-left: 0;
+    margin-right: 5px;
+    transform: rotateY(180deg);
+}
+
+.wsus__login_form .wsus__single_input span {
+    right: auto;
+    left: 20px;
+}
+
+.wsus__blog_det_img .rating span {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.wsus__blog_det_text ul li {
+    padding-left: 0;
+    padding-right: 35px;
+}
+
+.wsus__blog_det_text ul li::after {
+    left: auto;
+    right: 0;
+    transform: rotateY(180deg);
+}
+
+.wsus__blog_det_share_tag ul li {
+    padding-right: 0 !important;
+}
+
+.wsus__blog_det_share_icon ul li {
+    padding-right: 0 !important;
+}
+
+.wsus_courses_img ul {
+    left: auto;
+    right: 20px;
+}
+
+.wsus_courses_text .rating span {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.wsus__banner {
+    background-position: left !important;
+}
+
+.banner_btn .venobox span {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.banner_btn .venobox span i {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.scroll_btn {
+    left: auto;
+    right: -80px;
+    padding-left: 20px;
+}
+
+.scroll_btn p {
+    margin-left: 10px;
+}
