@@ -516,3 +516,8 @@
 .scroll_btn p {
     margin-left: 10px;
 }
+
+.wsus__single_agents_link ul li a {
+    margin-right: 0;
+    margin-left: 10px;
+}

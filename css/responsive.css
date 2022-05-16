@@ -1,26 +1,493 @@
 @media (min-width: 1200px) and (max-width: 1399.99px) {
-    
-      
- 
-  
+
+    .wsus__banner_text h1 {
+        font-size: 65px;
+    }
+
+    .wsus__heading_area h2 {
+        font-size: 40px;
+    }
+
+    .wsus__about_img .about_3 {
+        width: 100% !important;
+        height: 85% !important;
+        top: 10%;
+        left: 0%;
+    }
+
+    .wsus__about_img a {
+        left: 60%;
+    }
+
+    .wsus__about_img .about_play_2 {
+        left: 35%;
+    }
+
+    .wsus__single_services a {
+        font-size: 20px;
+    }
+
+    .wsus__info_text h2 {
+        font-size: 43px;
+    }
+
+    .wsus__blog_text a {
+        font-size: 23px;
+    }
+
+
+    /* breadcrumb start */
+    .wsus__breadcrumb_overlay {
+        padding: 135px 0px 130px 0px;
+    }
+
+    /* breadcrumb end */
+
+
+
+
 }
 
 
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
-    
-      
- 
-  
+
+    /* home page start */
+    .main_menu ul li a {
+        margin: 0px 13px;
+    }
+
+    .wsus__banner_text h1 {
+        font-size: 55px;
+    }
+
+    .wsus__banner_text p {
+        width: 100%;
+    }
+
+    .home_2 .wsus__banner_img {
+        height: 430px;
+        margin-top: 140px;
+    }
+
+    .banner_btn li a {
+        margin-right: 0;
+    }
+
+    .wsus__banner_slider_area .slick-dots {
+        margin-top: 20px;
+    }
+
+    .wsus__heading_area h2 {
+        font-size: 40px;
+    }
+
+    .wsus__heading_area p {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .wsus__single_process span {
+        width: 130px;
+        height: 130px;
+        line-height: 130px;
+    }
+
+    .wsus__single_process p {
+        font-size: 20px;
+    }
+
+    .wsus__about_img .about_3 {
+        width: 100% !important;
+        height: 82% !important;
+        top: 8%;
+        left: 5%;
+    }
+
+    .home_2 .wsus__about_img,
+    .wsus__about_img {
+        height: 470px;
+    }
+
+    .wsus__about_img img {
+        width: 260px !important;
+        height: 260px !important;
+    }
+
+    .wsus__about_img a {
+        left: 70%;
+        top: 105px;
+    }
+
+    .wsus__about_img .about_play_2 {
+        left: 25%;
+        bottom: 85px;
+    }
+
+    .wsus__about_text ul li:nth-child(2) .icon {
+        font-size: 20px;
+    }
+
+    .wsus__heading_area h5 {
+        font-size: 18px;
+    }
+
+    .wsus__heading_area h5 i {
+        font-size: 15px;
+    }
+
+    .wsus__about_text ul li .text h4 {
+        font-size: 18px;
+    }
+
+    .wsus__about_text ul li .text {
+        width: 76%;
+    }
+
+    .wsus__about .wsus__heading_area p {
+        font-size: 16px;
+    }
+
+    .wsus__about_text ul li {
+        justify-content: space-between;
+    }
+
+    .wsus__single_training {
+        height: 300px;
+    }
+
+    .wsus__training_text h4 {
+        font-size: 20px;
+    }
+
+    .wsus__info_text h2 {
+        font-size: 20px;
+    }
+
+    .wsus__info_text h5 {
+        font-size: 14px;
+    }
+
+    .wsus__information_overlay {
+        padding: 50px 0px 60px 0px;
+    }
+
+    .home_2 .wsus__single_services {
+        padding: 20px 30px 27px 30px;
+    }
+
+    .wsus__pricing_header h2 {
+        font-size: 40px;
+    }
+
+    .wsus__blog_img {
+        height: 250px;
+    }
+
+    .wsus__single_blog {
+        padding: 10px;
+    }
+
+    .wsus__footer_content ul li a {
+        font-size: 15px;
+    }
+
+    .footer_2 form input {
+        width: 70%;
+    }
+
+    .footer_2 form button {
+        padding: 18px 50px;
+    }
+
+    /* home page end */
+
+
+
+    /* breadcrumb start */
+    .wsus__breadcrumb_overlay {
+        padding: 105px 0px 100px 0px;
+    }
+
+    /* breadcrumb end */
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
 
 @media (min-width: 768px) and (max-width: 991.99px) {
-    
-      
- 
-  
+
+    /* home page start */
+    .main_menu {
+        top: 0 !important;
+        background: #000 !important;
+        padding: 0;
+        height: 65px;
+    }
+
+    .main_menu .navbar-toggler {
+        border: 1px solid #9BB70D;
+        width: 35px;
+        height: 35px;
+        color: #9BB70D;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .main_menu .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .main_menu #navbarSupportedContent {
+        background: #000;
+        padding-bottom: 15px;
+        margin-top: 10px;
+        border-top: 1px solid #9BB70D;
+    }
+
+    .main_menu .border_area {
+        padding: 12px 0px;
+    }
+
+    .main_menu .navbar-brand {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .main_menu ul li a {
+        line-height: 50px;
+    }
+
+    .main_menu ul li a::after {
+        bottom: 8px;
+    }
+
+    .main_menu .dropdown {
+        top: 75%;
+        right: auto;
+        width: 250px;
+        border-top: 2px solid #9BB70D;
+        height: 250px;
+        overflow-y: auto;
+        left: 50%;
+        transform: scaleY(.5) translateX(-50%);
+    }
+
+    .main_menu ul li:hover .dropdown {
+        transform: scale(1) translateX(-50%);
+    }
+
+    .main_menu ul li:last-child a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .main_menu .dropdown li:last-child a {
+        padding-left: 20px !important;
+    }
+
+    .wsus__banner_text h1 {
+        font-size: 37px;
+    }
+
+    .wsus__banner_text {
+        margin-top: 170px;
+    }
+
+    .wsus__banner_text p {
+        width: 100%;
+    }
+
+    .home_2 .wsus__banner_img {
+        height: 360px;
+        padding: 0;
+        margin-top: 145px;
+    }
+
+    .banner_btn li a {
+        margin-right: 0;
+    }
+
+    .wsus__banner_slider_area .slick-dots {
+        margin-top: 20px;
+    }
+
+    .wsus__heading_area h2 {
+        font-size: 30px;
+    }
+
+    .wsus__heading_area p {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .wsus__single_process span {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 30px;
+    }
+
+    .wsus__single_process p {
+        font-size: 18px;
+    }
+
+    .wsus__about_img .about_3 {
+        width: 100% !important;
+        height: 64% !important;
+        top: 20%;
+        left: 0%;
+    }
+
+    .home_2 .wsus__about_img,
+    .wsus__about_img {
+        height: 470px;
+    }
+
+    .wsus__about_img img {
+        width: 260px !important;
+        height: 260px !important;
+    }
+
+    .wsus__about_text ul li .icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 25px;
+    }
+
+    .wsus__about_text ul li:nth-child(2) .icon {
+        font-size: 20px;
+    }
+
+    .wsus__heading_area h5 {
+        font-size: 18px;
+    }
+
+    .wsus__heading_area h5 i {
+        font-size: 15px;
+    }
+
+    .wsus__about_text ul li .text h4 {
+        font-size: 18px;
+    }
+
+    .wsus__about_text ul li .text {
+        width: 76%;
+    }
+
+    .wsus__about .wsus__heading_area p {
+        font-size: 16px;
+    }
+
+    .wsus__about_text ul li {
+        justify-content: space-between;
+    }
+
+    .wsus__single_services a {
+        font-size: 18px;
+    }
+
+    .wsus__video_area {
+        height: 350px;
+    }
+
+    .wsus__single_training {
+        height: 300px;
+    }
+
+    .wsus__training_text h4 {
+        font-size: 20px;
+    }
+
+    .wsus__info_text h2 {
+        font-size: 20px;
+    }
+
+    .wsus__info_text h5 {
+        font-size: 14px;
+    }
+
+    .wsus__information_overlay {
+        padding: 50px 0px 60px 0px;
+    }
+
+    .home_2 .wsus__single_services {
+        padding: 20px 30px 27px 30px;
+    }
+
+    .wsus__pricing_header h2 {
+        font-size: 40px;
+    }
+
+    .wsus__blog_img {
+        height: 250px;
+    }
+
+    .wsus__single_blog {
+        padding: 10px;
+    }
+
+    .wsus__blog_text a {
+        font-size: 18px;
+    }
+
+    .wsus__footer_content {
+        margin-bottom: 55px;
+    }
+
+    .wsus__footer_content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .wsus__footer_content ul li a {
+        font-size: 15px;
+    }
+
+    .footer_2 form input {
+        width: 77%;
+    }
+
+    .footer_2 form button {
+        padding: 18px 50px;
+    }
+
+    .wsus__info_text {
+        margin-bottom: 5px;
+    }
+
+    .margin_md {
+        margin: 45px 0px !important;
+    }
+
+    /* home page end */
+
+
+    /* breadcrumb start */
+    .wsus__breadcrumb_overlay {
+        padding: 85px 0px 80px 0px;
+    }
+
+    .wsus__breadcrumb h1 {
+        font-size: 40px;
+    }
+
+    /* breadcrumb end */
+
+
+
+
 }
 
 
@@ -28,10 +495,300 @@
 
 
 @media (min-width: 576px) and (max-width: 767.99px) {
-    
-      
- 
-  
+
+    /* home page start */
+    .main_menu {
+        top: 0 !important;
+        background: #000 !important;
+        padding: 0;
+        height: 65px;
+    }
+
+    .main_menu .navbar-toggler {
+        border: 1px solid #9BB70D;
+        width: 35px;
+        height: 35px;
+        color: #9BB70D;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .main_menu .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .main_menu #navbarSupportedContent {
+        background: #000;
+        padding-bottom: 15px;
+        margin-top: 10px;
+        border-top: 1px solid #9BB70D;
+    }
+
+    .main_menu .border_area {
+        padding: 12px 0px;
+    }
+
+    .main_menu .navbar-brand {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .main_menu ul li a {
+        line-height: 50px;
+    }
+
+    .main_menu ul li a::after {
+        bottom: 8px;
+    }
+
+    .main_menu .dropdown {
+        top: 75%;
+        right: auto;
+        width: 250px;
+        border-top: 2px solid #9BB70D;
+        height: 250px;
+        overflow-y: auto;
+        left: 50%;
+        transform: scaleY(.5) translateX(-50%);
+    }
+
+    .main_menu ul li:hover .dropdown {
+        transform: scale(1) translateX(-50%);
+    }
+
+    .main_menu ul li:last-child a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .main_menu .dropdown li:last-child a {
+        padding-left: 20px !important;
+    }
+
+    .wsus__banner_text h1 {
+        font-size: 37px;
+    }
+
+    .home_2 .wsus__banner_img {
+        display: none;
+    }
+
+    .wsus__banner_text {
+        margin-top: 140px;
+        text-align: center;
+    }
+
+    .wsus__banner_text p {
+        width: 100%;
+    }
+
+    .banner_btn {
+        justify-content: center;
+    }
+
+    .banner_btn li a {
+        margin-right: 0;
+    }
+
+    .wsus__banner_slider_area .slick-dots {
+        margin-top: 20px;
+    }
+
+    .wsus__heading_area h2 {
+        font-size: 30px;
+    }
+
+    .wsus__heading_area p {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .wsus__single_process span {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 30px;
+    }
+
+    .wsus__single_process p {
+        font-size: 18px;
+    }
+
+    .wsus__single_process span::after {
+        display: none;
+    }
+
+    .wsus__about_img .about_3 {
+        width: 80% !important;
+        height: 90% !important;
+        top: 45px;
+        left: 70px;
+    }
+
+    .wsus__about_img img {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .wsus__about_img a {
+        left: 70%;
+        top: 120px;
+        transform: translateX(-50%);
+    }
+
+    .wsus__about_img .about_play_2 {
+        left: 28%;
+        bottom: 95px;
+        transform: translateX(-50%);
+    }
+
+    .wsus__about_img {
+        height: 400px !important;
+        margin-bottom: 30px;
+    }
+
+    .wsus__heading_area h5 {
+        font-size: 18px;
+    }
+
+    .wsus__heading_area h5 i {
+        font-size: 15px;
+    }
+
+    .wsus__about_text ul li .icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        margin-right: 10px;
+        font-size: 30px !important;
+    }
+
+    .wsus__about_text ul li .text h4 {
+        font-size: 18px;
+    }
+
+    .wsus__about_text ul li .text {
+        width: 85%;
+    }
+
+    .wsus__about_text ul li {
+        justify-content: space-between;
+    }
+
+    .wsus__video_area {
+        height: 300px;
+    }
+
+    .wsus__video_area::after {
+        width: 104%;
+        top: 25px;
+        left: -2%;
+    }
+
+    .wsus__single_training {
+        height: 300px;
+    }
+
+    .wsus__training_text h4 {
+        font-size: 20px;
+    }
+
+    .wsus__info_text h2 {
+        font-size: 20px;
+    }
+
+    .wsus__info_text h5 {
+        font-size: 14px;
+    }
+
+    .wsus__info_text_2 p {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .wsus__information_overlay {
+        padding: 50px 0px 60px 0px;
+    }
+
+    .home_2 .wsus__single_services {
+        padding: 25px 35px 32px 35px;
+    }
+
+    .wsus__pricing_header h2 {
+        font-size: 40px;
+    }
+
+    .wsus__blog_img {
+        height: 250px;
+    }
+
+    .wsus__single_blog {
+        padding: 10px;
+    }
+
+    .wsus__blog_text a {
+        font-size: 18px;
+    }
+
+    .wsus__footer_content {
+        margin-bottom: 55px;
+    }
+
+    .wsus__footer_content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .wsus__footer_content ul li a {
+        font-size: 15px;
+    }
+
+    .footer_2 form input {
+        width: 82%;
+    }
+
+    .footer_2 form button {
+        padding: 18px 20px;
+    }
+
+    .wsus__info_text {
+        margin-bottom: 5px;
+    }
+
+    /* home page end */
+
+
+
+
+    /* 404 start */
+    .wsus__404_text h4 {
+        font-size: 25px;
+    }
+
+    .wsus__404_text {
+        padding-top: 60px;
+    }
+
+    /* 404 end */
+
+
+    /* breadcrumb start */
+    .wsus__breadcrumb_overlay {
+        padding: 85px 0px 80px 0px;
+    }
+
+    .wsus__breadcrumb h1 {
+        font-size: 30px;
+    }
+
+    .wsus__breadcrumb ul li a {
+        font-size: 15px;
+    }
+
+    /* breadcrumb end */
+
+
+
 }
 
 
@@ -39,22 +796,305 @@
 
 
 @media (max-width: 575.99px) {
-    
-      
- 
-  
+
+    /* home page start */
+    .main_menu {
+        top: 0 !important;
+        background: #000 !important;
+        padding: 0;
+        height: 65px;
+    }
+
+    .main_menu .navbar-toggler {
+        border: 1px solid #9BB70D;
+        width: 35px;
+        height: 35px;
+        color: #9BB70D;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .main_menu .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .main_menu #navbarSupportedContent {
+        background: #000;
+        padding-bottom: 15px;
+        margin-top: 10px;
+        border-top: 1px solid #9BB70D;
+    }
+
+    .main_menu .border_area {
+        padding: 12px 0px;
+    }
+
+    .main_menu .navbar-brand {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .main_menu ul li a {
+        line-height: 50px;
+    }
+
+    .main_menu ul li a::after {
+        bottom: 8px;
+    }
+
+    .main_menu .dropdown {
+        top: 75%;
+        right: auto;
+        width: 250px;
+        border-top: 2px solid #9BB70D;
+        height: 250px;
+        overflow-y: auto;
+        left: 50%;
+        transform: scaleY(.5) translateX(-50%);
+    }
+
+    .main_menu ul li:hover .dropdown {
+        transform: scale(1) translateX(-50%);
+    }
+
+    .main_menu ul li:last-child a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .main_menu .dropdown li:last-child a {
+        padding-left: 20px !important;
+    }
+
+    .wsus__banner_text h1 {
+        font-size: 37px;
+    }
+
+    .home_2 .wsus__banner_img {
+        display: none;
+    }
+
+    .wsus__banner_text {
+        margin-top: 140px;
+        text-align: center;
+    }
+
+    .wsus__banner_text p {
+        width: 100%;
+    }
+
+    .banner_btn {
+        justify-content: center;
+    }
+
+    .banner_btn li a {
+        margin-right: 0;
+    }
+
+    .wsus__banner_slider_area .slick-dots {
+        margin-top: 20px;
+    }
+
+    .wsus__heading_area h2 {
+        font-size: 30px;
+    }
+
+    .wsus__heading_area p {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .wsus__single_process span {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 30px;
+    }
+
+    .wsus__single_process p {
+        font-size: 18px;
+    }
+
+    .wsus__single_process span::after {
+        display: none;
+    }
+
+    .wsus__about_img .about_3 {
+        width: 100% !important;
+        height: 50% !important;
+        top: 25%;
+        left: 0;
+    }
+
+    .wsus__about_img img {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    .wsus__about_img a {
+        left: 50%;
+        top: 100px;
+        transform: translateX(-50%);
+    }
+
+    .wsus__about_img .about_play_2 {
+        left: 50%;
+        bottom: 90px;
+        transform: translateX(-50%);
+    }
+
+    .wsus__about_img {
+        height: 625px !important;
+        margin-bottom: 30px;
+    }
+
+    .wsus__heading_area h5 {
+        font-size: 18px;
+    }
+
+    .wsus__heading_area h5 i {
+        font-size: 15px;
+    }
+
+    .wsus__about_text ul li .icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        margin-right: 10px;
+        font-size: 30px !important;
+    }
+
+    .wsus__about_text ul li .text h4 {
+        font-size: 18px;
+    }
+
+    .wsus__about_text ul li .text {
+        width: 75%;
+    }
+
+    .wsus__about_text ul li {
+        justify-content: space-between;
+    }
+
+    .wsus__video_area {
+        height: 300px;
+    }
+
+    .wsus__video_area::after {
+        width: 104%;
+        top: 25px;
+        left: -2%;
+    }
+
+    .wsus__single_training {
+        height: 300px;
+    }
+
+    .wsus__training_text h4 {
+        font-size: 20px;
+    }
+
+    .wsus__info_text h2 {
+        font-size: 20px;
+    }
+
+    .wsus__info_text h5 {
+        font-size: 14px;
+    }
+
+    .wsus__info_text_2 p {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .wsus__information_overlay {
+        padding: 50px 0px 60px 0px;
+    }
+
+    .home_2 .wsus__single_services {
+        padding: 25px 35px 32px 35px;
+    }
+
+    .wsus__pricing_header h2 {
+        font-size: 40px;
+    }
+
+    .wsus__blog_img {
+        height: 250px;
+    }
+
+    .wsus__single_blog {
+        padding: 10px;
+    }
+
+    .wsus__blog_text a {
+        font-size: 18px;
+    }
+
+    .wsus__footer_content {
+        margin-bottom: 55px;
+    }
+
+    .wsus__footer_content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .wsus__footer_content ul li a {
+        font-size: 15px;
+    }
+
+    .footer_2 form input {
+        width: 70%;
+    }
+
+    .footer_2 form button {
+        padding: 18px 20px;
+    }
+
+    .wsus__info_text {
+        margin-bottom: 5px;
+    }
+
+    /* home page end */
+
+
+
+
+
+
+    /* 404 start */
+    .wsus__404_text h4 {
+        font-size: 20px;
+    }
+
+    .wsus__404_text {
+        padding-top: 60px;
+    }
+
+    /* 404 end */
+
+
+
+    /* breadcrumb start */
+    .wsus__breadcrumb_overlay {
+        padding: 85px 0px 80px 0px;
+    }
+
+    .wsus__breadcrumb h1 {
+        font-size: 30px;
+    }
+
+    .wsus__breadcrumb ul li a {
+        font-size: 15px;
+    }
+
+    /* breadcrumb end */
+
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

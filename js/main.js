@@ -66,7 +66,7 @@ $(function () {
     $('.banner_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         dots: true,
         arrows: false,
@@ -86,13 +86,13 @@ $(function () {
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                 }
             },
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 }
             },
             {
@@ -149,6 +149,23 @@ $(function () {
             autoPlay: true,
         });
     }
+
+    //*==========SCROLL BUTTON==========  
+    $('.wsus__scroll_btn').on('click', function () {
+        $('html, body').animate({
+            scrollTop: 0,
+        }, 500);
+    });
+
+    $(window).on('scroll', function () {
+        var scrolling = $(this).scrollTop();
+
+        if (scrolling > 300) {
+            $('.wsus__scroll_btn').fadeIn();
+        } else {
+            $('.wsus__scroll_btn').fadeOut();
+        }
+    });
 
 
 });
