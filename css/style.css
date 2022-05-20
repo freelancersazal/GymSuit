@@ -1,7 +1,5 @@
-@font-face {
-	font-family: Helvetica;
-	src: url(font/Helvetica.ttf)
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
 
 * {
 	margin: 0;
@@ -35,7 +33,7 @@ span {
 
 body {
 	background: #000;
-	font-family: Helvetica;
+	font-family: 'Montserrat', sans-serif;
 	color: #fff;
 	overflow-x: hidden;
 }
@@ -288,8 +286,6 @@ button {
 	background: #03030B;
 }
 
-.home_1 .menu_fix {}
-
 .home_1 .main_menu .dropdown {
 	padding: 15px 0px;
 }
@@ -313,7 +309,7 @@ button {
 	transform-origin: top;
 	opacity: 0;
 	visibility: hidden;
-	z-index: 9;
+	z-index: 999;
 	transition: all linear .3s;
 	-webkit-transition: all linear .3s ease;
 	-moz-transition: all linear .3s ease;
@@ -478,22 +474,27 @@ button {
 	position: relative;
 }
 
-.scroll_btn p span {
-	color: #9BB70D;
-	animation: scroll_animi 4s ease-in-out infinite alternate;
-	-webkit-animation: scroll_animi 4s ease-in-out infinite alternate;
+.scroll_btn p::after {
 	position: absolute;
-	top: 0;
-	left: 5px;
+	content: "";
+	width: 20px;
+	height: 3px;
+	background: #9BB70D;
+	animation: scroll_animi 4s infinite alternate;
+	-webkit-animation: scroll_animi 4s infinite alternate;
+	top: 6px;
+	left: 6px;
+	border-radius: 30px;
 }
+
 
 @keyframes scroll_animi {
 	0% {
-		left: 5px;
+		left: 6px;
 	}
 
 	100% {
-		left: 50px;
+		left: 40px;
 	}
 }
 
@@ -653,6 +654,7 @@ button {
 	font-size: 24px;
 	color: #fff;
 	font-weight: 700;
+	text-align: center;
 	margin: 15px 0px 20px 0px;
 	transition: all linear .3s;
 	-webkit-transition: all linear .3s ease;
@@ -672,6 +674,10 @@ button {
 	-moz-transition: all linear .3s ease;
 	-ms-transition: all linear .3s ease;
 	-o-transition: all linear .3s ease;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .wsus__single_services:hover {
@@ -1822,6 +1828,10 @@ footer::before {
 .wsus__copyright p {
 	text-align: center;
 	color: #6D6F73;
+}
+
+.home_1 .wsus__scroll_btn {
+	background: #B6D900;
 }
 
 /* =================================
@@ -3051,6 +3061,7 @@ footer::before {
 
 .wsus__schedule table tr {
 	border-bottom: 1px solid #4F4C4C;
+	display: flex;
 }
 
 .wsus__schedule table tr th {
@@ -3069,6 +3080,16 @@ footer::before {
 	border-right: 1px solid #4F4C4C;
 	padding: 20px 5px;
 	vertical-align: middle;
+}
+
+.wsus__schedule table tr th,
+.wsus__schedule table tr td {
+	display: flex;
+	width: 12.5%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-width: 150px;
 }
 
 .wsus__schedule table tr th:last-child,
@@ -3650,8 +3671,8 @@ footer::before {
 	font-size: 20px;
 	padding: 10px 20px;
 	border-radius: 0 !important;
+	width: 100%;
 }
-
 
 .wsus__pro_description .nav-pills .nav-link.active,
 .wsus__pro_description .nav-pills .nav-link:hover {
@@ -3733,6 +3754,11 @@ footer::before {
 	text-transform: capitalize;
 	font-weight: 700;
 	margin-bottom: 30px;
+}
+
+.wsus__related_product .wsus_product {
+	margin-bottom: 0;
+	margin-top: 25px;
 }
 
 /* =================================

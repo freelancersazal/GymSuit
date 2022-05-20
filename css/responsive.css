@@ -60,14 +60,14 @@
         width: 65%;
     }
 
+    .wsus__banner_img {
+        height: 660px;
+    }
 
-
-
-
-
-
+    .wsus__schedule .table-responsive {
+        width: 1115px;
+    }
 }
-
 
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
@@ -257,18 +257,34 @@
     }
 
 
+    /* home page 2 start */
+    .home_1 .wsus__banner_img {
+        height: 520px;
+    }
+
+    .scroll_btn p {
+        display: none;
+    }
+
+    .home_1 .banner_btn li .common_btn {
+        margin-right: 15px;
+    }
+
+    .home_1 .wsus__gallery_item .wsus__gallery_text {
+        padding: 30px;
+    }
+
+    .home_1 .main_menu ul li a {
+        padding: 10px 15px !important;
+    }
+
+    /* home page 2 end */
 
 
-
-
-
-
-
-
-
-
+    .wsus__schedule .table-responsive {
+        width: 935px;
+    }
 }
-
 
 
 @media (min-width: 768px) and (max-width: 991.99px) {
@@ -533,7 +549,6 @@
     /* breadcrumb end */
 
 
-
     /* blog details start */
     .wsus__blog_det_img,
     .wsus__service_det_img {
@@ -602,18 +617,96 @@
     }
 
 
+    /* home page 2 start */
+    .home_1 .wsus__banner_img {
+        height: 400px;
+    }
+
+    .home_1 .wsus__banner {
+        background-position: top right !important;
+    }
+
+    .home_1 .wsus__banner_text h5 {
+        color: #fff;
+    }
+
+    .scroll_btn p {
+        display: none;
+    }
+
+    .home_1 .banner_btn li .common_btn {
+        margin-right: 15px;
+        background: #566705;
+    }
+
+    .home_1 .banner_btn li .common_btn:hover {
+        background: #748b03;
+    }
+
+    .home_1 .wsus__gallery_item .wsus__gallery_text {
+        padding: 30px;
+    }
+
+    .home_1 .wsus__footer_content form button {
+        width: 20%;
+    }
+
+    .home_1 .wsus__footer_content form input {
+        width: 79%;
+    }
+
+    /* home page 2 end */
 
 
+    /* product details start */
+    .wsus__pro_det_area h3 {
+        margin-top: 30px;
+    }
+
+    .wsus__pro_description ul li {
+        width: 33.33%;
+    }
+
+    .wsus__pro_description ul li:last-child {
+        border: 0;
+    }
+
+    .wsus__pagination .page-item {
+        width: auto;
+    }
+
+    .product_search {
+        margin-top: 30px;
+    }
+
+    /* product details end */
 
 
+    /* schedule page start */
+    .colorful-tab-menu {
+        flex-direction: inherit;
+    }
+
+    .colorful-tab-menu-item a {
+        padding: 15px 20px;
+        margin: 0px 10px 10px 0px;
+    }
+
+    /* schedule page end */
 
 
+    /* service details start */
+    .wsus__service_det_area {
+        margin-bottom: 30px;
+    }
+
+    /* service details end */
 
 
+    .wsus__schedule .table-responsive {
+        width: 700px;
+    }
 }
-
-
-
 
 
 @media (min-width: 576px) and (max-width: 767.99px) {
@@ -833,7 +926,7 @@
         padding: 50px 0px 60px 0px;
     }
 
-    .home_2 .wsus__single_services {
+    .wsus__single_services {
         padding: 25px 35px 32px 35px;
     }
 
@@ -879,8 +972,6 @@
     }
 
     /* home page end */
-
-
 
 
     /* 404 start */
@@ -962,7 +1053,6 @@
     }
 
     /* blog details end */
-
 
 
     /* blog list view start */
@@ -1060,14 +1150,123 @@
     }
 
 
+    /* home page 2 start */
+    .home_1 .wsus__banner_img {
+        display: none;
+    }
+
+    .home_1 .main_menu #navbarSupportedContent {
+        padding-top: 15px;
+    }
+
+    .home_1 .menu_fix ul li:last-child a {
+        background: #000;
+    }
+
+    .scroll_btn {
+        display: none;
+    }
+
+    .home_1 .banner_btn .common_btn {
+        background: #000;
+        margin-right: 20px;
+    }
+
+    .home_1 .banner_btn li .common_btn:hover {
+        background: #748b03;
+    }
+
+    .home_1 .banner_btn .venobox span {
+        margin-right: 10px;
+    }
+
+    .home_1 .wsus__banner_text {
+        padding-bottom: 60px;
+    }
+
+    .home_1 .wsus__banner_text h5 {
+        color: #000;
+    }
+
+    .home_1 .wsus__footer_content form input {
+        width: 75%;
+    }
+
+    .home_1 .wsus__scroll_btn {
+        background: #000;
+    }
+
+    .wsus__gallery_item .wsus__gallery_text {
+        padding: 25px;
+    }
+
+    .home_1 .wsus__single_services {
+        padding: 20px;
+    }
+
+    /* home page 2 end */
 
 
+    /* product details start */
+    .wsus__pro_det_area h3 {
+        margin-top: 30px;
+    }
+
+    .wsus__pro_description ul li {
+        border-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #5E5B5B;
+    }
+
+    .wsus__pro_description ul li:last-child {
+        border-bottom: 0;
+    }
+
+    .wsus__pagination .page-item {
+        width: auto;
+    }
+
+    .product_search {
+        margin-top: 30px;
+    }
+
+    /* product details end */
 
 
+    /* schedule page start */
+    .colorful-tab-menu {
+        flex-direction: inherit;
+    }
+
+    .colorful-tab-menu-item a {
+        padding: 15px 20px;
+        margin: 0px 10px 10px 0px;
+    }
+
+    /* schedule page end */
+
+
+    /* service details start */
+    .wsus__service_det_area {
+        margin-bottom: 30px;
+    }
+
+    .wsus__next_prev_service ul li {
+        border-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+
+    /* service details end */
+
+    .wsus__terms_con_text h2 {
+        font-size: 35px;
+    }
+
+    .wsus__schedule .table-responsive {
+        width: 520px;
+    }
 }
-
-
-
 
 
 @media (max-width: 575.99px) {
@@ -1335,10 +1534,6 @@
     /* home page end */
 
 
-
-
-
-
     /* 404 start */
     .wsus__404_text h4 {
         font-size: 20px;
@@ -1349,7 +1544,6 @@
     }
 
     /* 404 end */
-
 
 
     /* breadcrumb start */
@@ -1371,7 +1565,7 @@
     /* blog details start */
     .wsus__blog_det_img,
     .wsus__service_det_img {
-        height: 250PX;
+        height: 250px;
     }
 
     .wsus__blog_det_text .top_icon {
@@ -1447,7 +1641,6 @@
     /* blog details end */
 
 
-
     /* blog list view start */
     .wsus__blog_list_img {
         height: 250px;
@@ -1474,7 +1667,6 @@
     }
 
     /* blog list view end */
-
 
 
     /* cart view start */
@@ -1505,8 +1697,6 @@
     }
 
     /* cart view end */
-
-
 
 
     .wsus__checkout_form a {
@@ -1576,7 +1766,6 @@
     }
 
     .home_1 .main_menu #navbarSupportedContent {
-        background: #9BB70D;
         padding-top: 15px;
     }
 
@@ -1598,10 +1787,13 @@
         padding: 15px 20px;
     }
 
+    .home_1 .banner_btn li .common_btn:hover {
+        background: #748b03;
+    }
+
     .home_1 .banner_btn {
         justify-content: space-between;
     }
-
 
     .home_1 .banner_btn .venobox span {
         margin-right: 10px;
@@ -1619,13 +1811,89 @@
         padding: 18px 20px;
     }
 
-    .home_1 .wsus__scroll_btn {
-        background: #000;
+    .wsus__gallery_item .wsus__gallery_text {
+        padding: 25px;
     }
 
     /* home page 2 end */
 
 
+    /* product details start */
+    .wsus__pro_det_area h3 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
 
+    .quentity_area ul li a,
+    .share_area ul li a {
+        margin-left: 0;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+
+    .wsus__pro_description ul li {
+        border-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #5E5B5B;
+    }
+
+    .wsus__pro_description ul li:last-child {
+        border-bottom: 0;
+    }
+
+    .wsus__pagination .page-item {
+        width: auto;
+    }
+
+    .product_search {
+        margin-top: 30px;
+    }
+
+    /* product details end */
+
+
+    /* schedule page start */
+    .colorful-tab-menu {
+        flex-direction: inherit;
+    }
+
+    .colorful-tab-menu-item a {
+        padding: 15px 20px;
+        margin: 0px 10px 10px 0px;
+    }
+
+    .colorful-tab-container {
+        flex-direction: inherit;
+    }
+
+    .wsus__schedule table tr th,
+    .wsus__schedule table tr td {
+        min-width: 120px;
+    }
+
+    /* schedule page end */
+
+
+    /* service details start */
+    .wsus__service_det_area {
+        margin-bottom: 30px;
+    }
+
+    .wsus__next_prev_service ul li {
+        border-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+
+    /* service details end */
+
+
+    .wsus__terms_con_text h2 {
+        font-size: 30px;
+    }
+
+    .wsus__terms_con_text h6 {
+        font-size: 18px;
+    }
 
 }
