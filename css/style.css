@@ -459,7 +459,7 @@ button {
 	transform: rotate(-90deg);
 	cursor: pointer;
 	position: absolute;
-	bottom: 70px;
+	bottom: 75px;
 	left: -67px;
 }
 
@@ -651,10 +651,9 @@ button {
 
 .wsus__single_services a {
 	display: block;
-	font-size: 24px;
+	font-size: 22px;
 	color: #fff;
 	font-weight: 700;
-	text-align: center;
 	margin: 15px 0px 20px 0px;
 	transition: all linear .3s;
 	-webkit-transition: all linear .3s ease;
@@ -1375,7 +1374,7 @@ button {
 }
 
 .wsus__blog_text a {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 700;
 	color: #fff;
 	text-align: center;
