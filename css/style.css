@@ -3126,9 +3126,9 @@ footer::before {
 	padding: 0;
 }
 
-.sidebar_item form {
+/* .sidebar_item form {
 	padding-top: 20px;
-}
+} */
 
 .sidebar_item form input {
 	width: 68%;
