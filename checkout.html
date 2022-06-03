@@ -76,7 +76,7 @@
                         <a class="nav-link" href="contact.html">contact us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="signin.html">log in</a>
+                        <a class="nav-link" href="#"><i class="fal fa-cart-plus"></i> <span>03</span></a>
                     </li>
                 </ul>
             </div>
@@ -180,11 +180,87 @@
                                 <label>Address 2</label>
                                 <input type="text">
                             </div>
-                            <div class="col-12 mt_20 mb_25">
+                            <div class="col-12 mt_20 mb_20">
                                 <h2>Billing Address</h2>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="check1">
-                                    <label class="form-check-label" for="check1">Same as shipping address</label>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label collapsed" for="flexCheckDefault"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                    aria-controls="flush-collapseOne">Ship to a different
+                                                    address?</label>
+                                            </div>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-xl-6">
+                                                        <label>First name</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <label>Last name</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <label>Email address</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <label>Phone number</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <label>Company</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <label>Country</label>
+                                                        <div class="wsus__select_area">
+                                                            <select class="select_2" name="state">
+                                                                <option value="AL">Country</option>
+                                                                <option value="">dhaka</option>
+                                                                <option value="">barisal</option>
+                                                                <option value="">khulna</option>
+                                                                <option value="">rajshahi</option>
+                                                                <option value="">bogura</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <label>City</label>
+                                                        <div class="wsus__select_area">
+                                                            <select class="select_2" name="state">
+                                                                <option value="AL">city</option>
+                                                                <option value="">dhaka</option>
+                                                                <option value="">barisal</option>
+                                                                <option value="">khulna</option>
+                                                                <option value="">rajshahi</option>
+                                                                <option value="">bogura</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <label>Zip code</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <label>Address 1</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <label>Address 2</label>
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-sm-6">
@@ -231,7 +307,7 @@
                             <li> <span>Tax</span> <span>54.76$</span> </li>
                             <li> <span>Total</span> <span>432.65$</span> </li>
                         </ul>
-                        <a href="#" class="common_btn">Place an order <i class="far fa-arrow-right"></i></a>
+                        <a href="payment.html" class="common_btn">Place an order <i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

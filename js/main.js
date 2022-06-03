@@ -132,6 +132,11 @@ $(function () {
         top: 65,
     })
 
+    //=======STICKY SIDEBAR====== 
+    $("#sticky_sidebar2").stickit({
+        top: 65,
+    })
+
 
     //=======SELECT2====== 
     $(document).ready(function () {

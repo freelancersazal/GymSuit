@@ -598,10 +598,9 @@
 
     /* cart view end */
 
-
     .wsus__checkout_form a {
-        padding: 16px;
-        font-size: 14px;
+        padding: 15px;
+        font-size: 13px;
     }
 
     .wsus__check_item_text {
@@ -705,6 +704,14 @@
 
     .wsus__schedule .table-responsive {
         width: 700px;
+    }
+
+    .wsus__payment_item {
+        margin-bottom: 30px;
+    }
+
+    .wsus__payment_info {
+        margin-bottom: 30px;
     }
 }
 
@@ -1266,6 +1273,28 @@
     .wsus__schedule .table-responsive {
         width: 520px;
     }
+
+    .wsus__blog_det_text .top_icon {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .wsus__blog_det_text .top_icon li {
+        margin-bottom: 10px;
+    }
+
+    .wsus__blog_det_text .top_icon li:last-child {
+        margin-left: 0;
+    }
+
+    .wsus__payment_item {
+        margin-bottom: 30px;
+    }
+
+    .wsus__payment_info {
+        margin-bottom: 30px;
+    }
+
 }
 
 
@@ -1570,6 +1599,11 @@
 
     .wsus__blog_det_text .top_icon {
         flex-direction: column;
+        align-items: start;
+    }
+
+    .wsus__blog_det_text .top_icon li:last-child {
+        margin-left: 0;
     }
 
     .wsus__blog_det_text .top_icon li {
@@ -1894,6 +1928,22 @@
 
     .wsus__terms_con_text h6 {
         font-size: 18px;
+    }
+
+    .wsus__payment_item {
+        margin-bottom: 30px;
+    }
+
+    .wsus__payment_info {
+        margin-bottom: 30px;
+    }
+
+    .sidebar_item form input {
+        width: 60%;
+    }
+
+    .sidebar_item form button {
+        width: 38%;
     }
 
 }

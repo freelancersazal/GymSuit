@@ -12,9 +12,13 @@
     margin-left: 0 !important;
 }
 
+.main_menu ul li:last-child a span {
+    right: auto;
+    left: -16px;
+}
+
 .main_menu ul li:last-child a {
-    margin-right: 22px;
-    margin-left: 0;
+    margin-left: 8px;
 }
 
 .main_menu .navbar-brand {
@@ -22,8 +26,8 @@
 }
 
 .main_menu .dropdown {
-    right: auto;
-    left: 0;
+    right: 0;
+    left: auto;
 }
 
 .wsus__heading_area h2 {
@@ -529,8 +533,19 @@
     text-align: center;
 }
 
+.cart_sedebar .accordion-header .form-check label {
+    margin-right: 60px;
+}
 
+.wsus_other_payment ul li {
+    padding-left: 0;
+    padding-right: 20px;
+}
 
+.wsus_other_payment ul li::after {
+    left: auto;
+    right: 0;
+}
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
     .wsus__heading_area p {
@@ -620,7 +635,7 @@
     }
 
     .main_menu ul li:hover .dropdown {
-        transform: scale(1) translateX(-29%);
+        transform: scale(1) translateX(30%);
     }
 
     .wsus__faq .accordion-body {
@@ -672,7 +687,7 @@
     }
 
     .main_menu ul li:hover .dropdown {
-        transform: scale(1) translateX(-29%);
+        transform: scale(1) translateX(30%);
     }
 
     .wsus__404_text h4 {

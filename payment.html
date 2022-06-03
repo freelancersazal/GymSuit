@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>GymSuit</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/circlos.css">
+    <link rel="stylesheet" href="css/colorfulTab.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/jquery.exzoom.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link rel="stylesheet" href="css/rtl.css"> -->
+</head>
+
+<body>
+
+    <!-- ===========================
+        MAIN MENU START
+    ============================ -->
+    <nav class="navbar navbar-expand-lg main_menu">
+        <div class="container border_area">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Top_Logo.png" alt="GymSuit" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fal fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog_grid.html">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">pages <i class="far fa-angle-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="courses.html">courses</a></li>
+                            <li><a href="courses_details.html">courses details</a></li>
+                            <li><a href="product.html">product</a></li>
+                            <li><a href="product_details.html">product details</a></li>
+                            <li><a href="blog_list.html">blog list view</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="cart_view.html">cart view</a></li>
+                            <li><a href="checkout.html">checkout</a></li>
+                            <li><a class="active" href="faq.html">FAQ</a></li>
+                            <li><a href="gallery.html">gallery</a></li>
+                            <li><a href="privacy.html">privacy Policy</a></li>
+                            <li><a href="schedule.html">schedule</a></li>
+                            <li><a href="terms_condition.html">terms and condition</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fal fa-cart-plus"></i> <span>03</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ===========================
+        MAIN MENU END
+    ============================ -->
+
+
+    <!-- ===========================
+        BREADCRUMB START
+    ============================ -->
+    <section class="wsus__breadcrumb" style="background: url(images/breadcrumb_bg.png);">
+        <div class="wsus__breadcrumb_overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>payment</h1>
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">payment</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========================
+        BREADCRUMB END
+    ============================ -->
+
+
+    <!-- ===========================
+        PAYMENT START
+    ============================ -->
+    <section class="wsus__payment mt_120 xs_mt_70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4">
+                    <div class="wsus__payment_item" id="sticky_sidebar2">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">card</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">bank</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">paypal</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab1" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact1" type="button" role="tab"
+                                    aria-controls="pills-contact1" aria-selected="false">bkash</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab2" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact2" type="button" role="tab"
+                                    aria-controls="pills-contact1" aria-selected="false">nagad</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                    <div class="wsus__payment_info">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div class="wsus__pay_card">
+                                    <h5>we accept :</h5>
+                                    <img src="images/payment_img.png" alt="payment" class="img-fluid w-100">
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <input type="text" placeholder="Card Holder Name">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" placeholder="Card Number">
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <input type="text" placeholder="Month">
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <input type="text" placeholder="Year">
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <input type="text" placeholder="CVC">
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="common_btn">payment</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="wsus_other_payment">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores eum
+                                        sequi libero consequuntur temporibus dignissimos doloremque provident quibusdam
+                                        quidem Doloremque ad commodi assumenda sit nobis modi architecto.</p>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                                        <li>Ipsum dolor sit amet consectetur adipisicing elit Facilis.</li>
+                                        <li>Dignissimos doloremque provident quibusdam quidem.</li>
+                                    </ul>
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <input type="text" placeholder="Card Number">
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <input type="text" placeholder="Exp: Month">
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <input type="text" placeholder="Exp: Year">
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <input type="text" placeholder="CVV">
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="wsus__select_area">
+                                                    <select class="select_2" name="state">
+                                                        <option value="AL">Country</option>
+                                                        <option value="">dhaka</option>
+                                                        <option value="">barisal</option>
+                                                        <option value="">khulna</option>
+                                                        <option value="">rajshahi</option>
+                                                        <option value="">bogura</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <textarea rows="6" placeholder="Message"></textarea>
+                                                <button type="submit" class="common_btn">confirm</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="wsus_other_payment">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores eum
+                                        sequi libero consequuntur temporibus dignissimos doloremque provident quibusdam
+                                        quidem Doloremque ad commodi assumenda sit nobis modi architecto.</p>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                                        <li>Ipsum dolor sit amet consectetur adipisicing elit Facilis.</li>
+                                        <li>Dignissimos doloremque provident quibusdam quidem.</li>
+                                    </ul>
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <input type="text" placeholder="Card Number">
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <input type="text" placeholder="Exp: Month">
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <input type="text" placeholder="Exp: Year">
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <input type="text" placeholder="CVV">
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="wsus__select_area">
+                                                    <select class="select_2" name="state">
+                                                        <option value="AL">Country</option>
+                                                        <option value="">dhaka</option>
+                                                        <option value="">barisal</option>
+                                                        <option value="">khulna</option>
+                                                        <option value="">rajshahi</option>
+                                                        <option value="">bogura</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <textarea rows="6" placeholder="Message"></textarea>
+                                                <button type="submit" class="common_btn">confirm</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact1" role="tabpanel"
+                                aria-labelledby="pills-contact-tab1">
+                                <div class="wsus_other_payment">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores eum
+                                        sequi libero consequuntur temporibus dignissimos doloremque provident quibusdam
+                                        quidem Doloremque ad commodi assumenda sit nobis modi architecto.</p>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                                        <li>Ipsum dolor sit amet consectetur adipisicing elit Facilis.</li>
+                                        <li>Dignissimos doloremque provident quibusdam quidem.</li>
+                                    </ul>
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <input type="text" placeholder="Card Number">
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <input type="text" placeholder="Exp: Month">
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <input type="text" placeholder="Exp: Year">
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <input type="text" placeholder="CVV">
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="wsus__select_area">
+                                                    <select class="select_2" name="state">
+                                                        <option value="AL">Country</option>
+                                                        <option value="">dhaka</option>
+                                                        <option value="">barisal</option>
+                                                        <option value="">khulna</option>
+                                                        <option value="">rajshahi</option>
+                                                        <option value="">bogura</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <textarea rows="6" placeholder="Message"></textarea>
+                                                <button type="submit" class="common_btn">confirm</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact2" role="tabpanel"
+                                aria-labelledby="pills-contact-tab2">
+                                <div class="wsus_other_payment">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores eum
+                                        sequi libero consequuntur temporibus dignissimos doloremque provident quibusdam
+                                        quidem Doloremque ad commodi assumenda sit nobis modi architecto.</p>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                                        <li>Ipsum dolor sit amet consectetur adipisicing elit Facilis.</li>
+                                        <li>Dignissimos doloremque provident quibusdam quidem.</li>
+                                    </ul>
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <input type="text" placeholder="Card Number">
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <input type="text" placeholder="Exp: Month">
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <input type="text" placeholder="Exp: Year">
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <input type="text" placeholder="CVV">
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="wsus__select_area">
+                                                    <select class="select_2" name="state">
+                                                        <option value="AL">Country</option>
+                                                        <option value="">dhaka</option>
+                                                        <option value="">barisal</option>
+                                                        <option value="">khulna</option>
+                                                        <option value="">rajshahi</option>
+                                                        <option value="">bogura</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <textarea rows="6" placeholder="Message"></textarea>
+                                                <button type="submit" class="common_btn">confirm</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sidebar_item summary" id="sticky_sidebar">
+                        <h4>order summary</h4>
+                        <ul>
+                            <li>Subtotals: <span>$381.00</span></li>
+                            <li>shipping fee (+): <span>$381.00</span></li>
+                            <li>tax (+): <span>$381.00</span></li>
+                            <li>coupon (-): <span>$381.00</span></li>
+                            <li><b>total</b><b>$120</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========================
+        PAYMENT END
+    ============================ -->
+
+
+    <!-- ===========================
+       FOOTER START
+    ============================ -->
+    <footer class="footer_2 mt_130 xs_mt_80 pt_130 xs_pt_80">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-8 col-lg-3 col-xl-3">
+                    <div class="wsus__footer_content">
+                        <a href="index.html" class="footer_logo">
+                            <img src="images/Top_Logo.png" alt="logo" class="img-fluid">
+                        </a>
+                        <p><i class="far fa-map-marker-alt"></i> 8819 Ohio St. South Gate, CA 90280</p>
+                        <a href="mailto:example@gmail.com"><i class="fal fa-envelope"></i> Ourstudio@hello.com</a>
+                        <a href="callto:0134679596456"><i class="fas fa-phone-alt"></i> +1 386-688-3295</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                    <div class="wsus__footer_content">
+                        <h3>company</h3>
+                        <ul>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="terms_condition.html">Terms & condition</a></li>
+                            <li><a href="#">Gym Corporate</a></li>
+                            <li><a href="#">Fithub App</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                    <div class="wsus__footer_content">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">News/Press</a></li>
+                            <li><a href="#">Fithub On Demand</a></li>
+                            <li><a href="#">International Clubs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                    <div class="wsus__footer_content">
+                        <h3>services</h3>
+                        <ul>
+                            <li><a href="blog_grid.html">Blog</a></li>
+                            <li><a href="terms_condition.html">Terms</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="contact.html">FAQs & Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                    <div class="wsus__footer_content">
+                        <h3>Serious stuff</h3>
+                        <ul>
+                            <li><a href="#">Gym Rules</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">Gym Safety</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt_100 xs_mt_10 mb_100 xs_mb_15 margin_md">
+                <div class="col-xl-8 col-lg-8">
+                    <div class="wsus__footer_content">
+                        <form>
+                            <input type="text" placeholder="Enter Your Email">
+                            <button type="submit" class="common_btn">send</button>
+                        </form>
+                        <ul class="footer_link d-flex flex-wrap justify-content-center">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wsus__copyright">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p>©Copy wright by Ayeman 2022. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ===========================
+       FOOTER END
+    ============================ -->
+
+
+
+    <!--================================
+        SCROLL BUTTON START
+    =================================-->
+    <div class="wsus__scroll_btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!--================================
+        SCROLL BUTTON END
+    =================================-->
+
+
+
+    <!--jquery library js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="js/Font-Awesome.js"></script>
+    <!--veno box js-->
+    <script src="js/venobox.min.js"></script>
+    <!--counter js-->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
+    <!--slick slideer js-->
+    <script src="js/slick.min.js"></script>
+    <!--circlos js-->
+    <script src="js/circlos.js"></script>
+    <!--colorfulTab js-->
+    <script src="js/colorfulTab.min.js"></script>
+    <!--exzoom js-->
+    <script src="js/jquery.exzoom.js"></script>
+    <!--select2 js-->
+    <script src="js/select2.min.js"></script>
+    <!--sticky_sidebar js-->
+    <script src="js/sticky_sidebar.js"></script>
+
+    <!--main/custom js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -76,7 +76,7 @@
                         <a class="nav-link" href="contact.html">contact us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="signin.html">log in</a>
+                        <a class="nav-link" href="#"><i class="fal fa-cart-plus"></i> <span>03</span></a>
                     </li>
                 </ul>
             </div>
@@ -135,6 +135,7 @@
                                 <li><i class="fas fa-list-ul"></i> gym</li>
                                 <li><i class="fal fa-calendar-alt"></i> 03 month</li>
                                 <li><i class="fal fa-money-check-edit-alt"></i>$200</li>
+                                <li><a href="#" class="common_btn">add to cart</a></li>
                             </ul>
                             <h4 class="title">10 Reasons To Do A Digital Detox Challenge</h4>
                             <p>Netus pretium tellus nulla commodo massa adipiscing in elementum magna congue condimentum
@@ -594,3 +595,28 @@
 </body>
 
 </html>
+
+
+@foreach ($reviews->where('parent_id', 0) as $review)
+<div class="col-xl-12">
+    <div class="wsus__single_review">
+        <img src="{{ asset('assets/frontend/images/clients_img.png') }}" alt="img" class="img-fluid w-100">
+        <div class="wsus__review_text">
+            <h5>{{ $review->user->name }}</h5>
+            <span><i class="fal fa-clock"></i> {{ date_format($review->created_at, 'd F Y') }}</span>
+            <p>{{ $review->comment }}</p>
+            <a href="#"><i class="fal fa-reply"></i> {{ __('reply') }}</a>
+            @foreach ($reviews->where('parent_id', $review->id) as $commentreview)
+            <div class="wsus__single_review">
+                <img src="{{ asset('assets/frontend/images/info_small.png') }}" alt="img" class="img-fluid w-100">
+                <div class="wsus__review_text">
+                    <h5>{{ $commentreview->name }}</h5>
+                    <span><i class="fal fa-clock"></i> {{ date_format($commentreview->created_at, 'd F Y') }}</span>
+                    <p>{{ $commentreview->comment }}</p>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+@endforeach
